@@ -16,7 +16,7 @@ def login(request):
         ret = Person.objects.filter(email=email, password=pwd)
         # if email == '892028617@qq.com' and pwd == '123':
         if ret:
-            return redirect('/author_list/')
+            return redirect('/book/author_list/')
         else:
             error_msg = '用户名和密码错误'
     # 如果用户验证正确那么error_msg 是空字符串 为空render不出来
@@ -37,7 +37,7 @@ def add_press(request):
         ret = request.POST.get("press_name")
         Press.objects.create(pname=ret)
         print(333)
-        return redirect("/index.html/")
+        return redirect("/book/index.html/")
     return  render(request, 'add_press.html',)
 
 
@@ -47,7 +47,7 @@ def del_press(request):
     print(del_id)
     Press.objects.filter(id=del_id).delete()
 
-    return redirect("/index.html/")
+    return redirect("/book/index.html/")
 
 
 def edit_press(request):
@@ -60,7 +60,7 @@ def edit_press(request):
         ret1 =  Press.objects.filter(id=id)
         ret.pname = name
         ret.save()
-        return redirect("/index.html/")
+        return redirect("/book/index.html/")
     id_edit = request.GET.get('id')
     print(id_edit)
     print("*" * 120)
@@ -77,7 +77,7 @@ def test():
                 return HttpResponse("密码错误")
 
             else:
-                return redirect('/login/')
+                return redirect('/book/login/')
         return bar
     return foo
 
@@ -97,7 +97,7 @@ def add_book(request):
     print(add_press, add_name)
     book.objects.create(title=add_name, press_id=add_press)
     ret_press = Press.objects.all()
-    return redirect("/book_list.html/")
+    return redirect("/book/book_list.html/")
 
 
 
@@ -107,7 +107,7 @@ def del_book(requesst):
     book_id = requesst.GET.get("id")
     print('你要删除我吗', book_id)
     book.objects.filter(id=book_id).delete()
-    return redirect('/book_list.html/')
+    return redirect('/book/book_list.html/')
 
 
 def edit_book(request):
@@ -123,7 +123,7 @@ def edit_book(request):
         edit_book.title=book_input
         edit_book.press_id = press_input
         edit_book.save()
-        return redirect('/book_list/')
+        return redirect('/book/book_list/')
     return render( request, 'edit_book.html', {"press_list": ret_press, 'book': edit_book})
 
 
@@ -148,7 +148,7 @@ def add_author(request):
         print(obj, type(obj))
         obj.book.add(*book_list)  #给创建的作者对象添加关联的书籍信息
         #上面的操作本质上在三张表建立了许多新的关联对象
-        return redirect('/author_list/')
+        return redirect('/book/author_list/')
 
         #1 创建一个新的作者和书关系表
     return HttpResponse("KO")
@@ -159,7 +159,7 @@ def del_author(request):
     print(del_id)
     Author.objects.filter(id=del_id).delete()
 
-    return redirect('/author_list/')
+    return redirect('/book/author_list/')
 
 # 编辑作者
 def edit_author(request):
@@ -191,7 +191,7 @@ def edit_author(request):
         author.save()
         #给第三张表添加外键
         author.book.set(new_book_name)
-        return redirect('/author_list/')
+        return redirect('/book/author_list/')
     return render(request, 'edit_author.html', {"press_list": press_list, "book_list": book_list, "author": author})
 
 

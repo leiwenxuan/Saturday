@@ -59,12 +59,12 @@
                 {% endfor %}
             </td>
             <td>
-                <a href="/del_author/?id={{ author.id }}">
+                <a href="/book/del_author/?id={{ author.id }}">
                     <button class="btn btn-primary btn-lg">
                         删除
                     </button>
                 </a>
-                <a href="/edit_author/?id={{ author.id }}">
+                <a href="/book/edit_author/?id={{ author.id }}">
                     <button class="btn btn-primary btn-lg">
                         修改
                     </button>
@@ -97,7 +97,7 @@
             {#                </h4>#}
             {#            </div>#}
             <div class="modal-body">
-                <form class="form-horizontal" role="form" action="/add_author/" method="post">
+                <form class="form-horizontal" role="form" action="/book/add_author/" method="post">
                     <div class="form-group form-group-lg">
                         <label class="col-sm-2 control-label" for="formGroupInputLarge">姓名</label>
                         <div class="col-sm-5">

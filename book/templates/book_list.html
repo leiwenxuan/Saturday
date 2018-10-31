@@ -141,11 +141,11 @@
 
                             </div><!-- /input-group -->
                         </div><!-- /.col-lg-4 -->
-                        <a href="/index/">
+                        <a href="/book/index/">
                             <button type="button" class="btn btn-info">显示出版社</button>
                         </a>
 
-                        <a href="/author_list/">
+                        <a href="/book/author_list/">
                             <button type="button" class="btn btn-info">显示作者</button>
                         </a>
 
@@ -182,13 +182,13 @@
                                     <td>{{ book.title }}</td>
                                     <td>{{ book.press.pname }}</td>
                                     <td class="text-center">
-                                        <a href="/edit_book/?id={{ book.id }}">
+                                        <a href="/book/edit_book/?id={{ book.id }}">
 
                                             <button type="button" class="btn btn-success">
                                                 <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 编辑
                                             </button>
                                         </a>
-                                        <a href="/del_book/?id={{ book.id }}">
+                                        <a href="/book/del_book/?id={{ book.id }}">
                                             <button type="button" class="btn btn-danger"><span
                                                     class="glyphicon glyphicon-remove" aria-hidden="true"></span> 删除
                                             </button>
@@ -242,7 +242,7 @@
                 </div>
                 <div class="modal-body">
 
-                    <form class="form-horizontal" action='/add_book/' method="post">
+                    <form class="form-horizontal" action='/book/add_book/' method="post">
                         <div class="form-group">
                             <label for="inputEmail3" class="col-sm-2 control-label">图书</label>
                             <div class="col-sm-10">
@@ -287,7 +287,7 @@
                 </div>
                 <div class="modal-body">
 
-                    <form class="form-horizontal" role="form" action="/add_press/" method="post">
+                    <form class="form-horizontal" role="form" action="/book/add_press/" method="post">
                         <div class="form-group">
                             <label for="firstname" class="col-sm-2 control-label">名字</label>
                             <div class="col-sm-10">
