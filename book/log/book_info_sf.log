@@ -1,0 +1,177 @@
+[2018-10-30 09:35:59,152][Thread-7:140682405037824][task_id:book.views][views.py:162][INFO][尤瓦尔·赫拉利]
+[2018-10-30 09:36:03,267][Thread-10:140682405037824][task_id:book.views][views.py:162][INFO][杜甫]
+[2018-10-30 11:56:22,155][Thread-5:140013032380160][task_id:book.views][views.py:161][INFO][杜甫]
+[2018-10-30 11:56:24,349][Thread-7:140013032380160][task_id:book.views][views.py:161][INFO][杜甫]
+[2018-10-30 12:15:02,302][Thread-14:139637641180928][task_id:book.views][views.py:161][INFO][杜甫]
+[2018-10-30 12:24:02,527][Thread-1:140172175558400][task_id:book.views][views.py:161][INFO][杜甫]
+[2018-10-30 12:24:15,303][Thread-4:140172175558400][task_id:book.views][views.py:161][INFO][杜甫]
+[2018-10-30 12:24:15,304][Thread-4:140172175558400][task_id:book.views][views.py:172][CRITICAL][['16']]
+[2018-10-30 13:38:57,086][Thread-4:140466005821184][task_id:book.views][views.py:161][INFO][尤瓦尔·赫拉利]
+[2018-10-30 13:48:29,767][Thread-32:139858472666880][task_id:django.request][exception.py:135][ERROR][Internal Server Error: /edit_author/]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/lwx/hexo/Django/mysite/book/views.py", line 158, in edit_author
+    author = Author.objects.get(id=author_id)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+book.models.DoesNotExist: Author matching query does not exist.
+[2018-10-30 13:49:05,323][Thread-40:139858472666880][task_id:django.request][exception.py:135][ERROR][Internal Server Error: /edit_author/]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/lwx/hexo/Django/mysite/book/views.py", line 158, in edit_author
+    author = Author.objects.get(id=author_id)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+book.models.DoesNotExist: Author matching query does not exist.
+[2018-10-30 14:38:23,031][Thread-4:140584206067456][task_id:book.views][views.py:161][INFO][尤瓦尔·赫拉利]
+[2018-10-30 16:23:14,165][Thread-8:139806218647296][task_id:book.views][views.py:176][INFO][尤瓦尔·赫拉利]
+[2018-10-30 16:29:30,272][Thread-27:139806430975744][task_id:book.views][views.py:176][INFO][尤瓦尔·赫拉利]
+[2018-10-30 16:55:13,418][Thread-7:139895800588032][task_id:book.views][views.py:176][INFO][尤瓦尔·赫拉利]
+[2018-10-30 16:58:44,642][Thread-21:139930278991616][task_id:book.views][views.py:176][INFO][尤瓦尔·赫拉利]
+[2018-10-31 06:35:26,574][Thread-12:140155100845824][task_id:django.request][exception.py:135][ERROR][Internal Server Error: /author_list/]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/lwx/hexo/Django/mysite/book/views.py", line 137, in author_list
+    return render(request, 'author_list.html', {"author_list":author_obj, 'press_lisst':press_list, 'book_list': book_list})
+  File "/usr/local/lib/python3.6/dist-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/defaulttags.py", line 827, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 520, in parse
+    self.unclosed_block_tag(parse_until)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 124: 'for'. Looking for one of: empty, endfor.
+[2018-10-31 06:51:13,019][Thread-7:139938801305344][task_id:book.views][views.py:176][INFO][无言]
+[2018-10-31 06:51:17,904][Thread-8:139938801305344][task_id:book.views][views.py:176][INFO][无言]
+[2018-10-31 06:51:23,405][Thread-12:139938781800192][task_id:book.views][views.py:176][INFO][无言]
+[2018-10-31 07:04:43,923][Thread-37:140320876525312][task_id:book.views][views.py:176][INFO][尤瓦尔·赫拉利]
+[2018-10-31 07:28:06,140][Thread-119:140320876525312][task_id:book.views][views.py:176][INFO][尤瓦尔·赫拉利]
+[2018-10-31 07:29:33,296][Thread-129:140321087756032][task_id:book.views][views.py:176][INFO][尤瓦尔·赫拉利]
+[2018-10-31 07:29:39,358][Thread-131:140321087756032][task_id:book.views][views.py:176][INFO][杜甫]
+[2018-10-31 07:29:45,155][Thread-133:140321098868480][task_id:book.views][views.py:176][INFO][杜甫]
+[2018-10-31 07:29:45,156][Thread-133:140321098868480][task_id:book.views][views.py:187][CRITICAL][['24']]
+[2018-10-31 07:42:30,933][Thread-15:139744075839232][task_id:book.views][views.py:176][INFO][尤瓦尔·赫拉利]
+[2018-10-31 07:58:59,895][Thread-37:140583499601664][task_id:book.views][views.py:176][INFO][杜甫]
+[2018-10-31 07:59:15,578][Thread-48:140583499601664][task_id:book.views][views.py:176][INFO][杜甫]
+[2018-10-31 08:09:30,766][Thread-8:140496531416832][task_id:book.views][views.py:176][INFO][尤瓦尔·赫拉利]
+[2018-10-31 08:09:36,263][Thread-10:140496531416832][task_id:book.views][views.py:176][INFO][尤瓦尔·赫拉利]
+[2018-10-31 08:09:36,263][Thread-10:140496531416832][task_id:book.views][views.py:187][CRITICAL][['23', '24', '25']]
+[2018-10-31 08:09:58,123][Thread-13:140496531416832][task_id:book.views][views.py:176][INFO][尤瓦尔·赫拉利]
+[2018-10-31 12:27:13,770][Thread-30:140012133787392][task_id:django.request][exception.py:135][ERROR][Internal Server Error: /template_test]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/lwx/hexo/Django/mysite/book/views.py", line 220, in template_test
+    return render(request, "template_test.html", {"l": l, "d": d, 'value2': mytime,"person_list": person_list, 'value': '无言独上西楼'})
+  File "/usr/local/lib/python3.6/dist-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 486, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 484, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 695, in __init__
+    self.args_check(filter_name, filter_func, args)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 770, in args_check
+    (name, alen - dlen, plen))
+django.template.exceptions.TemplateSyntaxError: join requires 2 arguments, 1 provided
+[2018-10-31 12:27:14,997][Thread-31:140012142180096][task_id:django.request][exception.py:135][ERROR][Internal Server Error: /template_test]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/lwx/hexo/Django/mysite/book/views.py", line 220, in template_test
+    return render(request, "template_test.html", {"l": l, "d": d, 'value2': mytime,"person_list": person_list, 'value': '无言独上西楼'})
+  File "/usr/local/lib/python3.6/dist-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 486, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 484, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 695, in __init__
+    self.args_check(filter_name, filter_func, args)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 770, in args_check
+    (name, alen - dlen, plen))
+django.template.exceptions.TemplateSyntaxError: join requires 2 arguments, 1 provided

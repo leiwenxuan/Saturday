@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改作者</title>
+    <link rel="stylesheet" href="/static/bootstrap-3.3.7/css/bootstrap.css">
+    <script src="/static/bootstrap-3.3.7/js/bootstrap.js"></script>
+    <script src="/static/css/jquery.js"></script>
+
+</head>
+<body>
+
+<form class="form-horizontal" role="form" action="" method="post">
+    <div class="form-group form-group-lg">
+        <label class="col-sm-2 control-label" for="formGroupInputLarge">姓名</label>
+        <div class="col-sm-5">
+            <input class="form-control" type="text" id="formGroupInputLarge" placeholder="Large input"
+                   name="author_name" value="{{ author.name }}">
+        </div>
+    </div>
+    <div class="form-group form-group-lg">
+        <label class="col-sm-2 control-label" for="formGroupInputLarge">age</label>
+        <div class="col-sm-5">
+            <input class="form-control" type="text" id="formGroupInputLarge" placeholder="Large input"
+                   name="author_age" value="{{ author.age }}">
+        </div>
+    </div>
+    <div class="form-group form-group-lg">
+        <label class="col-sm-2 control-label" for="formGroupInputLarge">书籍</label>
+        <div class="col-sm-5">
+            {#                            <input class="form-control" type="text" id="formGroupInputLarge" placeholder="Large input"#}
+            {#                                   name="book_name">#}
+            <select name="book_name" id="" multiple>
+                {% for book in book_list %}
+{#                    如果循环的书籍在当前的作者列表中我让他显示#}
+                    {% if book in  author.book.all %}
+                    <option selected value="{{ book.id }}">{{ book.title }}</option>
+{#                    否则不显示#}
+
+                    {% else %}
+                         <option value="{{ book.id }}">{{ book.title }}</option>
+                    {% endif %}
+
+
+
+                {% endfor %}
+            </select>
+        </div>
+    </div>
+
+
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">提交</button>
+        </div>
+    </div>
+    </form>
+
+
+</body>
+</html>

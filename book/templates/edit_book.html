@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/bootstrap-3.3.7/css/bootstrap.css">
+</head>
+<body>
+<form class="form-horizontal" role="form" action="/edit_book/?id={{ book.id }}"  method="post">
+    <div class="form-group">
+        <label for="firstname" class="col-sm-2 control-label">图书</label>
+        <div class="col-sm-5">
+            <input type="text" class="form-control" id="firstname" placeholder="请输入名字" name="title" value="{{ book.title }}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="lastname" class="col-sm-2 control-label">出版社</label>
+        <div class="col-sm-5">
+            <select name="press_name" id="">
+                {% for press in press_list %}
+                    {% if press.id  ==  book.press.id  %}
+                        <option selected value="{{ press.id  }}">{{ press.pname }}</option>
+                    {% else %}
+                        <option value="{{press.id  }}">{{ press.pname }}</option>
+                    {% endif %}
+                {% endfor %}
+            </select>
+
+            {#            <input type="text" class="form-control" id="lastname" placeholder="请输入姓">#}
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">登录</button>
+        </div>
+    </div>
+</form>
+<script src="/static/bootstrap-3.3.7/js/bootstrap.js"></script>
+<script src="/static/css/jquery.js"></script>
+</body>
+</html>
