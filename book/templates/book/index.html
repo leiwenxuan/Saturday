@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block add_press %}
+    <button class="btn btn-primary btn-lg text-center" data-toggle="modal" data-target="#myModal_press_add">
+        添加出版社
+    </button>
+{% endblock %}
+
+{% block page-main %}
+    {#打印出版社信息#}
+    <table class="table table-bordered">
+        {#  <caption>上下文表格布局</caption>#}
+        <thead>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        {% for press in press_list %}
+            <tr>
+                <td>{{ press.id }}</td>
+                <td> {{ press.pname }} </td>
+                <td>
+                    <a href="/book/del_press/?id={{ press.id }}">
+                        <button class="btn btn-primary btn-lg">
+                            删除
+                        </button>
+                    </a>
+                    <a href="/book/edit_press/?id={{ press.id }}">
+                        <button class="btn btn-primary btn-lg">
+                            修改
+                        </button>
+                    </a>
+                </td>
+            </tr>
+        {% endfor %}
+
+        </tbody>
+    </table>
+
+{% endblock %}

@@ -20,7 +20,7 @@ def login(request):
         else:
             error_msg = '用户名和密码错误'
     # 如果用户验证正确那么error_msg 是空字符串 为空render不出来
-    return render(request, 'login.html', {'error_msg':error_msg})
+    return render(request, 'book/login.html', {'error_msg':error_msg})
 
 
 def index(request):
@@ -28,7 +28,7 @@ def index(request):
     data = Press.objects.all()
     # print(data[0].pname)
 
-    return render(request,'index.html', {"press_list": data})
+    return render(request,'book/index.html', {"press_list": data})
 
 
 def add_press(request):
@@ -38,7 +38,7 @@ def add_press(request):
         Press.objects.create(pname=ret)
         print(333)
         return redirect("/book/index.html/")
-    return  render(request, 'add_press.html',)
+    return  render(request, 'book/add_press.html',)
 
 
 def del_press(request):
@@ -66,7 +66,7 @@ def edit_press(request):
     print("*" * 120)
     obj = Press.objects.get(id=id_edit)
     print("*" * 120)
-    return render(request, "edit_press.html", {"obj":obj})
+    return render(request, "book/edit_press.html", {"obj":obj})
 
 
 def test():
@@ -87,7 +87,7 @@ def book_list(request):
     ret = book.objects.all()
     press_ret = Press.objects.all()
     print(press_ret)
-    return render(request, 'book_list.html', {"book_list": ret, "press_list": press_ret})
+    return render(request, 'book/book_list.html', {"book_list": ret, "press_list": press_ret})
 
 
 #添加数据
@@ -124,7 +124,7 @@ def edit_book(request):
         edit_book.press_id = press_input
         edit_book.save()
         return redirect('/book/book_list/')
-    return render( request, 'edit_book.html', {"press_list": ret_press, 'book': edit_book})
+    return render( request, 'book/edit_book.html', {"press_list": ret_press, 'book': edit_book})
 
 
 #day59　作者
@@ -134,7 +134,7 @@ def author_list(request):
 
     press_list = Press.objects.all()
     book_list = book.objects.all()
-    return render(request, 'author_list.html', {"author_list":author_obj, 'press_lisst':press_list, 'book_list': book_list})
+    return render(request, 'book/author_list.html', {"author_list":author_obj, 'press_lisst':press_list, 'book_list': book_list})
 
 # 添加作者
 def add_author(request):
@@ -192,7 +192,7 @@ def edit_author(request):
         #给第三张表添加外键
         author.book.set(new_book_name)
         return redirect('/book/author_list/')
-    return render(request, 'edit_author.html', {"press_list": press_list, "book_list": book_list, "author": author})
+    return render(request, 'book/edit_author.html', {"press_list": press_list, "book_list": book_list, "author": author})
 
 
 #test
@@ -211,13 +211,22 @@ def template_test(request):
 
     Alex = Person(name="Alex", age=34)
     Egon = Person(name="Egon", age=9000)
-    Eva_J = Person(name="Eva_J", age=18)
+    无言 = Person(name="无言", age=18)
 
-    person_list = [Alex, Egon, Eva_J]
+
+    person_list = [Alex, Egon, 无言]
     mytime = 'lei wen  xuan'
     value2 = "<a href='#'>点我</a>"
 
-    return render(request, "template_test.html", {"l": l, "d": d, 'value2': mytime,"person_list": person_list, 'value': '无言独上西楼'})
+    return render(request, "html/template_test.html", {'l': l, "person_list": person_list, 'web_time': "2018-11-01 9:20:00"})
 
+def birthday(request):
+    ret = book.objects.all()
+    press_ret = Press.objects.all()
+    birth = ''
+    if request.method == "POST":
+        birth = request.POST.get('birthday')
+        print(birth)
 
+    return render(request, 'book/book_list.html', {'birthday': birth, "book_list": ret, "press_list": press_ret})
 

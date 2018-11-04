@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+
+{% block add_author %}
+<!-- 按钮触发模态框 -->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal_author">
+    添加作者
+</button>
+{% endblock %}
+{% block page-main %}
+<table class="table table-bordered">
+    {#  <caption>上下文表格布局</caption>#}
+    <thead>
+    <tr>
+        <th>序号</th>
+        <th>id</th>
+        <th>作者</th>
+        <th>年龄</th>
+        <th>作品</th>
+        <th>出版社</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    {% for author in author_list %}
+        <tr>
+            <td>{{ forloop.counter }}</td>
+            <td> {{ author.id }} </td>
+            <td> {{ author.name }} </td>
+            <td> {{ author.age }} </td>
+            <td>
+                {% for book in author.book.all %}
+                    {% if forloop.last %}
+                        《{{ book.title }}》
+                    {% else %}
+                        《{{ book.title }}》,
+                    {% endif %}
+                {% empty %}
+                    暂无作品
+                {% endfor %}
+            </td>
+            <td qs="{{ author.id }}">
+                {% for book in author.book.all %}
+                    {% if forloop.last %}
+                        《{{ book.press.pname }}》
+                    {% else %}
+                        《{{ book.press.pname }}》,
+                    {% endif %}
+                {% empty %}
+                    暂无作品
+                {% endfor %}
+            </td>
+            <td>
+                <a href="/book/del_author/?id={{ author.id }}">
+                    <button class="btn btn-primary btn-lg">
+                        删除
+                    </button>
+                </a>
+                <a href="/book/edit_author/?id={{ author.id }}">
+                    <button class="btn btn-primary btn-lg">
+                        修改
+                    </button>
+                </a>
+{#                                <button class="btn btn-warning edit-author">模态框编辑</button>#}
+                {#                <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">#}
+                {#    修改作者#}
+                {#</button>#}
+
+            </td>
+        </tr>
+    {% endfor %}
+
+    </tbody>
+</table>
+
+{% endblock %}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加班级</title>
+    <link rel="stylesheet" href="/static/bootstrap-3.3.7/css/bootstrap.css">
+    <script src="/static/bootstrap-3.3.7/js/bootstrap.js"></script>
+    <script src="/static/css/jquery.js"></script>
+</head>
+<body>
+    <form class="form-horizontal" action="/teacher/add_class/" method="post">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">班级</label>
+    <div class="col-sm-5">
+      <input type="text"  name="class_name" class="form-control" id="inputEmail3" placeholder="班级">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-5">
+      <button type="button" class="btn btn-default">取消</button>
+      <button type="submit" class="btn btn-default">提交</button>
+    </div>
+  </div>
+</form>
+
+</body>
+</html>

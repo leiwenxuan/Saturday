@@ -24,13 +24,13 @@
 
 </head>
 <body>
+ {% load mydateutil %}
+<div id="div1">
 
- <div id="div1">
+    <img src="/static/picture/weixin.jpg" alt="..." class="">
+    <span id="share">  <button type="button" class="btn btn-success">联系我</button></span>
 
-        <img src="/static/picture/weixin.jpg" alt="..." class="">
-        <span id="share">  <button type="button" class="btn btn-success">联系我</button></span>
-
-  </div>
+</div>
 <!--导航条-->
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
@@ -50,7 +50,11 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Link</a></li>
+                <li><a href="#">
+                    <button type="button" data-toggle="modal" data-target="#myModal_bir">
+                        时间
+                    </button>
+                </a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -67,9 +71,9 @@
             </ul>
             <form class="navbar-form navbar-left">
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search">
+                    <input type="text" class="form-control" placeholder="{{ birthday|mydateutil }}">
                 </div>
-                <button type="submit" class="btn btn-default">Submit</button>
+{#                <button type="submit" class="btn btn-default">Submit</button>#}
             </form>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Link</a></li>
@@ -93,27 +97,27 @@
 <div class="container-fluid">
     <div class="row">
         <!--左侧菜单栏-->
-{#        <div class="col-sm-3 col-md-2 sidebar">#}
-{#            <ul class="nav nav-sidebar">#}
-{#                <li class="active"><a href="https://v3.bootcss.com/examples/dashboard/#">Overview <span class="sr-only">(current)</span></a>#}
-{#                </li>#}
-{#                <li><a href="https://v3.bootcss.com/examples/dashboard/#">Reports</a></li>#}
-{#                <li><a href="https://v3.bootcss.com/examples/dashboard/#">Analytics</a></li>#}
-{#                <li><a href="https://v3.bootcss.com/examples/dashboard/#">Export</a></li>#}
-{#            </ul>#}
-{#            <ul class="nav nav-sidebar">#}
-{#                <li><a href="https://v3.bootcss.com/examples/dashboard/">Nav item</a></li>#}
-{#                <li><a href="https://v3.bootcss.com/examples/dashboard/">Nav item again</a></li>#}
-{#                <li><a href="https://v3.bootcss.com/examples/dashboard/">One more nav</a></li>#}
-{#                <li><a href="https://v3.bootcss.com/examples/dashboard/">Another nav item</a></li>#}
-{#                <li><a href="https://v3.bootcss.com/examples/dashboard/">More navigation</a></li>#}
-{#            </ul>#}
-{#            <ul class="nav nav-sidebar">#}
-{#                <li><a href="https://v3.bootcss.com/examples/dashboard/">Nav item again</a></li>#}
-{#                <li><a href="https://v3.bootcss.com/examples/dashboard/">One more nav</a></li>#}
-{#                <li><a href="https://v3.bootcss.com/examples/dashboard/">Another nav item</a></li>#}
-{#            </ul>#}
-{#        </div>#}
+        {#        <div class="col-sm-3 col-md-2 sidebar">#}
+        {#            <ul class="nav nav-sidebar">#}
+        {#                <li class="active"><a href="https://v3.bootcss.com/examples/dashboard/#">Overview <span class="sr-only">(current)</span></a>#}
+        {#                </li>#}
+        {#                <li><a href="https://v3.bootcss.com/examples/dashboard/#">Reports</a></li>#}
+        {#                <li><a href="https://v3.bootcss.com/examples/dashboard/#">Analytics</a></li>#}
+        {#                <li><a href="https://v3.bootcss.com/examples/dashboard/#">Export</a></li>#}
+        {#            </ul>#}
+        {#            <ul class="nav nav-sidebar">#}
+        {#                <li><a href="https://v3.bootcss.com/examples/dashboard/">Nav item</a></li>#}
+        {#                <li><a href="https://v3.bootcss.com/examples/dashboard/">Nav item again</a></li>#}
+        {#                <li><a href="https://v3.bootcss.com/examples/dashboard/">One more nav</a></li>#}
+        {#                <li><a href="https://v3.bootcss.com/examples/dashboard/">Another nav item</a></li>#}
+        {#                <li><a href="https://v3.bootcss.com/examples/dashboard/">More navigation</a></li>#}
+        {#            </ul>#}
+        {#            <ul class="nav nav-sidebar">#}
+        {#                <li><a href="https://v3.bootcss.com/examples/dashboard/">Nav item again</a></li>#}
+        {#                <li><a href="https://v3.bootcss.com/examples/dashboard/">One more nav</a></li>#}
+        {#                <li><a href="https://v3.bootcss.com/examples/dashboard/">Another nav item</a></li>#}
+        {#            </ul>#}
+        {#        </div>#}
         <!--右侧列表-->
         <div class="col-sm-9 col-sm-offset-3 col-md-9 col-md-offset-2 main">
             <h1 class="page-header">我的后台管理</h1>
@@ -308,8 +312,40 @@
         </div><!-- /.modal -->
     </div>
 
+    {#计算生日#}
 
 
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal_bir" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal" action="/book/birthday/" method="post">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">看看你多少岁</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" name="birthday" placeholder="你的生日">
+    </div>
+  </div>
+
+   <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                </div>
+</form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

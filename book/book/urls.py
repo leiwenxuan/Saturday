@@ -25,6 +25,6 @@ urlpatterns = [
     url(r'^edit_author', views.edit_author),
     url(r'^test', views.test),
     url(r'^template_test', views.template_test),
-
+   url(r'^birthday', views.birthday),
     url(r'', views.book_list)
 ]
