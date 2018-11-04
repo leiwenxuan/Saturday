@@ -25,12 +25,15 @@ SECRET_KEY = 'x_9fa$swjz6^agp4_u%en+$1^@or@ef6a3%7-ye2g4(c6194ef'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+
+
 ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'suit',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -116,15 +119,23 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
-LANGUAGE_CODE = 'zh-hans'
-
+# LANGUAGE_CODE = 'zh-hans'
+#
+# TIME_ZONE = 'Asia/Shanghai'
+#
+# USE_I18N = True
+#
+# USE_L10N = True
+#
+# USE_TZ = True
+LANGUAGE_CODE = 'zh-Hans'  # 设置成中文，老版本django使用'zh_CN'
 TIME_ZONE = 'Asia/Shanghai'
-
 USE_I18N = True
+USE_L10N = False  # 注意是False 配合下边时间格式
+USE_TZ = False  # 如果只是内部使用的系统，这行建议为false，不然会有时区问题
+DATETIME_FORMAT = 'Y-m-d H:i:s'  # suit在admin里设置时间的一个小bug。需要把时间格式指定一下
+DATE_FORMAT = 'Y-m-d'
 
-USE_L10N = True
-
-USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
