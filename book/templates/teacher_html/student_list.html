@@ -1,7 +1,7 @@
 {% extends 'teacher/../base.html' %}
 
 {% block add_class %}
-    <a href="/teacher/add_student/">
+    <a href="{% url 'teacher:add_student' %}">
 <button type="button" class="btn btn-primary" >
   添加学生
 </button>
