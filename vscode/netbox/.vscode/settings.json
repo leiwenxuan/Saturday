@@ -1,0 +1,6 @@
+{
+    "git.ignoreLimitWarning": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "python.pythonPath": "env/bin/python",
+}

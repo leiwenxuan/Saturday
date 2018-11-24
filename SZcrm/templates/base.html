@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'bootstrap-3.3.7/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'sweet/sweetalert.css' %}">
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+</head>
+<style>
+    body {
+        padding-top: 70px;
+    }
+
+</style>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top ">
+    <div class="container-fluid container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+            <p class="navbar-text navbar-right">欢迎光临</p>
+            <ul class="nav navbar-nav navbar-right">
+                <li></li>
+                <li class="dropdown ">
+                    <a href="#" class="dropdown-toggle navbar-link" data-toggle="dropdown" role="button"
+                       aria-haspopup="true" aria-expanded="false">{{ request.user.name }} <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        {#            <li><a href="{% url 'forma:change' %}">修改密码</a></li>#}
+                        <li><a href="{% url 'crm:logout' %}">注销</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<script src="{% static 'css/jquery.js' %}"></script>
+<script src="{% static 'bootstrap-3.3.7/js/bootstrap.js' %}"></script>
+<script src="{% static 'setup_ajax.js' %}"></script>
+<script src="{% static 'sweet/sweetalert.js' %}"></script>
+{% block reg %}
+    {#    注册继承#}
+{% endblock %}
+
+{% block login %}
+    {#　登陆继承#}
+{% endblock %}
+
+{% block change %}
+    {#    修改密码继承#}
+{% endblock %}
+
+{% block logout %}
+{% endblock %}
+{% block index %}
+{% endblock %}
+
+<div class="container-fluid">
+    <div class="row ">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar navbar-inverse">
+                <li class="{% if flag_page == 'cus_list' %}active{% endif %}"><a href="{% url 'crm:cus_list' %}">客户列表</a></li>
+                <li class="{% if flag_page == 'pirvate' %}active{% endif %}"><a href="{% url 'crm:pirvate' %}">我的客户</a></li>
+                <li class="{% if flag_page == 'record_list' %}active{% endif %}"><a href="{% url 'crm:record_list' %}">跟进列表</a></li>
+                <li class="{% if flag_page == '' %}active{% endif %}"><a href="{% url 'crm:enrollment' 0%}">查看我的客户报名表</a></li>
+                <li class="{% if flag_page == '' %}active{% endif %}"><a href="{% url 'crm:class_list' %}">班级管理</a></li>
+            </ul>
+
+        </div>
+        {% block page-main %}
+        {% endblock %}
+    </div>
+</div>
+
+</body>
+</html>
