@@ -15,9 +15,14 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from django.conf import settings
 
-urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^crm/', include('crm.urls', namespace='crm')),
-    url(r'^app01/', include('app01.urls', namespace='app01'))
-]
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns = [
+        url('__debug__/', include(debug_toolbar.urls)),
+                        
+        url(r'^admin/', admin.site.urls),
+        url(r'^crm/', include('crm.urls', namespace='crm')),
+        url(r'^app01/', include('app01.urls', namespace='app01'))
+    ]

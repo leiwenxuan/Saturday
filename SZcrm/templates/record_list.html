@@ -51,7 +51,6 @@
                             <td>{{ record.get_status_display }}</td>
                             <td>{{ record.consultant }}</td>
                             <td>{{ record.date }}</td>
-
                             <td><a href="{% url 'crm:change_record' %}?edit_id={{ record.id }}" class="btn btn-warning">修改</a>
                             </td>
                         </tr>

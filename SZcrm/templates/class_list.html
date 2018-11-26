@@ -8,42 +8,34 @@
             <div class="panel-body">
                 班级列表
             </div>
-            <div class="text-right"><a href="{% url 'crm:add_list' 0 %}" class="btn btn-success btn-sm">添加</a></div>
+            <div class="text-left"><a href="{% url 'crm:add_list' 0 %}" class="btn btn-success btn-sm">添加</a></div>
             <div class="panel-footer">
                 <!--批量操作开始-->
                 <div class="pull-left">
 
                     <select name="" id="">
                         <option value="">--------------</option>
-                       
+
 
                     </select>
                     <input type="submit" value="批量操作">
                 </div>
                 <!--批量操作结束-->
 
-                <!--模糊搜索-->
-                <div class="text-right">
-                    <form action="">
-                        <input type="text">
-                        <input type="submit">
-                    </form>
-                </div>
-
                 <!--主页显示数据表格-->
                 <table class="table table-bordered">
                     <thead>
                         <tr>
+
                             <th>#</th>
                             <th>课程名称</th>
                             <th>学期</th>
-
                             <th>学费</th>
                             <th>说明</th>
                             <th>开班日期</th>
                             <th>选择合同模板</th>
                             <th>老师</th>
-                             <th>校区</th>
+                            <th>校区</th>
                             <th>班级类型</th>
                         </tr>
                     </thead>
@@ -52,7 +44,7 @@
                         {% for class in class_list %}
                         <tr>
                             <td>{{ forloop.counter }}</td>
-                            <td>{{ class.get_course_display }}</td>
+                            <td><a href="{% url 'crm:courserecord' class.id %}"> {{ class.get_course_display }}</a></td>
                             <td>{{ class.semester }}</td>
 
                             <td>{{ class.price }}</td>

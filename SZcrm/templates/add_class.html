@@ -2,7 +2,7 @@
 
 
 {% block reg %}
-    <h2 class="text-center">{% if edit_id %}编辑客户{% else %}添加客户{% endif %}</h2>
+    <h2 class="text-center">{% if edit_id %}编辑班级{% else %}添加班级{% endif %} {{ edit_id }}  </h2>
     <form class="form-horizontal" action="{{ request.get_full_path }}" method="post" novalidate
           autocomplete="off">
         {% csrf_token %}
