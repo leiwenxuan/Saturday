@@ -10,7 +10,8 @@
                 </div>
                 <div class="text-right" style="padding-top:  30px"><a
                         href="{% url 'crm:add_cus' 0 %}?next={{ request.get_full_path }}"
-                        class="btn btn-success btn-sm">添加</a></div>
+                        class="btn btn-success btn-sm">添加</a>
+                </div>
 
                 <!--模糊搜索-->
                 <div class="text-right" style="margin-bottom: -35px; padding-top: 10px">
@@ -75,21 +76,23 @@
                                     <td>{{ customer.show_class_list|default:'暂无' }}</td>
                                     <td><a href="{% url 'crm:record_list' %}">查看</a></td>
                                     <td>
-                                        <a href="{% url 'crm:enr_add' customer.id %}"><span
-                                                class="glyphicon glyphicon-plus"
-                                                aria-hidden="true"></span></a>
+                                        <a href="{% url 'crm:enr_add' customer.id %}">
+                                            <span
+                                                class="glyphicon glyphicon-plus" aria-hidden="true">
+                                            </span>
+                                        </a>
 
                                         <a href="{% url 'crm:enrollment' customer.id %}">查看</a>
                                     </td>
 
-                                    <td><a href="{% url 'crm:add_cus' customer.id %}?{{ next_url }}" class="btn btn-warning">修改</a>
+                                    <td><a href="{% url 'crm:add_cus' customer.id %}?{{ next_url }}"
+                                           class="btn btn-warning">修改</a>
                                     </td>
                                 </tr>
                             {% endfor %}
 
 
                             </tbody>
-
                         </table>
                         <!--主页显示数据结束-->
 
@@ -106,3 +109,6 @@
         </div>
     </div>
 {% endblock %}
+
+
+

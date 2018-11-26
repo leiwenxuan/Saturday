@@ -21,6 +21,15 @@ class ClassListAdmin(admin.ModelAdmin):
 class CustomerAdmin(admin.ModelAdmin):
     list_filter = ('status', )
 
+@admin.register(models.Role)
+class RoleAdmin(admin.ModelAdmin):
+    list_display = ('name', )
+
+@admin.register(models.Permission)
+class Permission(admin.ModelAdmin):
+    list_display = ('title', 'url')
+    list_editable = ['url']
+
 
 
 

@@ -426,7 +426,7 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
 
     memo = models.TextField('备注', blank=True, null=True, default=None)
     date_joined = models.DateTimeField(auto_now_add=True)
-
+    role = models.ManyToManyField(to='Role', verbose_name='角色分配')
     EMAIL_FIELD = 'email'
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['name']
@@ -451,3 +451,27 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
         return self.email
 
     objects = UserManager()
+
+
+# 权限表
+class Permission(models.Model):
+    title = models.CharField(max_length=30)
+    url = models.CharField(max_length=80)
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = '权限表'
+        verbose_name_plural = verbose_name
+
+# 角色
+class Role(models.Model):
+    name = models.CharField(max_length=20)
+    permissions = models.ManyToManyField(to='Permission', verbose_name='权限角色')
+
+    def __str__(self):
+        return self.name
+    class Meta:
+        verbose_name = '角色'
+        verbose_name_plural = verbose_name

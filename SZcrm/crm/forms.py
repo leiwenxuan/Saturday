@@ -9,7 +9,7 @@
 from django import forms
 from crm import models
 from django.forms.utils import ValidationError
-from crm.models import UserProfile, Customer, ConsultRecord, Enrollment, ClassList, StudyRecord, CourseRecord
+from crm.models import UserProfile, Customer, ConsultRecord, Enrollment, ClassList, StudyRecord, CourseRecord, PaymentRecord
 
 
 class Bootstrapclass(forms.ModelForm):
@@ -138,4 +138,9 @@ class CourseRecordForm(Bootstrapclass):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
+
+class PaymentRecordForm(Bootstrapclass):
+    class Meta:
+        model = PaymentRecord
+        fields = '__all__'
 

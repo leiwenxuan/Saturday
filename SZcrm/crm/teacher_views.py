@@ -9,7 +9,6 @@ from django.http import QueryDict
 
 # 班级列表
 class ClasslistViews(views.View):
-
     def get(self, request):
         query_set = ClassList.objects.all()
 
@@ -31,12 +30,14 @@ def add_list(request, eidt_id=0):
         else:
             return render(request, 'add_class.html', {"form_obj": form_obj})
     print(eidt_id)
-    return render(request, 'add_class.html', {"form_obj": form_obj, 'eidt_id': eidt_id})
+    return render(request, 'add_class.html', {
+        "form_obj": form_obj,
+        'eidt_id': eidt_id
+    })
 
 
 # 课程记录 列表
 class CourseRecordviews(views.View):
-
     def get(self, request, class_id=0):
         # 根据班级id 查询出所有的上课记录
         consult_obj = CourseRecord.objects.filter(re_class_id=class_id)
@@ -68,7 +69,8 @@ class CourseRecordviews(views.View):
         if ret:
             return ret
         else:
-            return redirect(reverse('crm:courserecord', kwargs={'class_id': class_id}))
+            return redirect(
+                reverse('crm:courserecord', kwargs={'class_id': class_id}))
 
     # 类私有方法： 功能批量生成课程记录表
     def _multi_init(self, cid):
@@ -81,7 +83,8 @@ class CourseRecordviews(views.View):
             # 根据课程表反向查找 学生
             all_student = course_record.re_class.customer_set.all()
             studentreord_objs = (StudyRecord(
-                course_record=course_record, student=student) for student in all_student)
+                course_record=course_record, student=student)
+                                 for student in all_student)
             StudyRecord.objects.bulk_create(studentreord_objs)
         return HttpResponse("初始化好了")
 
@@ -93,13 +96,9 @@ class AddCourseViews(views.View):
         class_obj = ClassList.objects.filter(id=class_id).first()
         # 要修改的对象
         edit_obj = CourseRecord.objects.filter(id=course_record_id).first()
-        form_obj = CourseRecordForm(instance=edit_obj, initial={
-            're_class': class_obj
-        })
-        seed_data = {
-            'form_obj': form_obj,
-            'edit_id': course_record_id
-        }
+        form_obj = CourseRecordForm(
+            instance=edit_obj, initial={'re_class': class_obj})
+        seed_data = {'form_obj': form_obj, 'edit_id': course_record_id}
         return render(request, 'add_course.html', seed_data)
 
     def post(self, request, class_id=0, course_record_id=None):

@@ -29,8 +29,8 @@ urlpatterns = [
 
     # 报名表
     url(r'enrollment/(?P<customer_id>\d+)/$', views.EnrollmentViews.as_view(), name='enrollment'),
-    url(r'enr_add/(?P<customer_id>\d+)$', views.enr_editViews.as_view(), name='enr_add'),
-    url(r'enr_edit/(?P<enrollment_id>\d+)$', views.enr_editViews.as_view(), name='enr_edit'),
+    url(r'enr_add/(?P<customer_id>\d+)/$', views.enr_editViews.as_view(), name='enr_add'),
+    url(r'enr_edit/(?P<enrollment_id>\d+)/$', views.enr_editViews.as_view(), name='enr_edit'),
 
 
     # 班级url视图
@@ -46,5 +46,9 @@ urlpatterns = [
 
     # cooladmin
     url(r'coolindex', views.Coolindex, name='coolindex'),
+
+    # 缴费记录
+    url(r'payment/(?P<customer_id>\d+)/$', views.payment, name='payment'),
+    url(r'edit_pay/(?P<customer_id>\d+)/$', views.edit_pay, name='edit_pay'),
 
 ]

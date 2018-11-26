@@ -9,9 +9,10 @@ from django.urls import reverse
 from django.utils.decorators import method_decorator
 from django.views import View
 
-from crm.forms import Addfrom, EnrollmentForms, RecordForms, RegisteredForm
-from crm.models import ConsultRecord, Customer, Enrollment, UserProfile
+from crm.forms import Addfrom, EnrollmentForms, RecordForms, PaymentRecordForm
+from crm.models import ConsultRecord, Customer, Enrollment, PaymentRecord
 from utils import mypage
+from SZcrm import settings
 
 logger = logging.getLogger(__name__)
 
@@ -300,4 +301,25 @@ def Coolindex(request):
     return render(request, 'CoolAdmin/index.html')
 
 
+# 缴费记录
+def payment(request, customer_id=0):
+    # 根据用户id 找到他的缴费记录
+    pay_obj = PaymentRecord.objects.filter(customer_id=customer_id)
 
+    return render(request, 'pay_list.html', {"pay_obj": pay_obj})
+
+
+# 编辑和添加缴费表
+def edit_pay(request, customer_id=0):
+    # 根据客户ｉｄ找到他的缴费记录
+    pay_obj = PaymentRecord(customer_id=customer_id)
+    # 有可能pay_obj 为none
+    form_obj = PaymentRecordForm(instance=pay_obj)
+    if request.method == "POST":
+        form_obj = PaymentRecordForm(request.POST, instance=pay_obj)
+        if form_obj.is_valid():
+            form_obj.save()
+            return redirect(
+                reverse('crm:payment', kwargs={'customer_id': customer_id}))
+
+    return render(request, 'edit_pay.html', {"form_obj": form_obj})

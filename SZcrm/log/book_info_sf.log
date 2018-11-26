@@ -10460,3 +10460,451 @@ django.db.utils.IntegrityError: (1062, "Duplicate entry '5-1' for key 'crm_study
 [2018-11-26 19:35:06,450][Thread-47:139768033703680][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/bg-title-02.jpg]
 [2018-11-26 19:35:06,481][Thread-45:139768526415616][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-03.jpg]
 [2018-11-26 19:35:06,496][Thread-46:139768559986432][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/bg-title-01.jpg]
+[2018-11-26 19:40:49,358][Thread-12:140455805482752][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-04.jpg]
+[2018-11-26 19:40:49,405][Thread-14:140455787910912][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-01.jpg]
+[2018-11-26 19:40:49,414][Thread-11:140455813875456][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-06.jpg]
+[2018-11-26 19:40:49,437][Thread-13:140455826822912][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-05.jpg]
+[2018-11-26 19:40:49,449][Thread-10:140455797090048][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/logo.png]
+[2018-11-26 19:41:26,513][Thread-17:140455797090048][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/logo.png]
+[2018-11-26 19:41:26,542][Thread-19:140455813875456][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-04.jpg]
+[2018-11-26 19:41:26,546][Thread-18:140455826822912][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-06.jpg]
+[2018-11-26 19:41:26,555][Thread-21:140455778469632][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-01.jpg]
+[2018-11-26 19:41:26,702][Thread-22:140455429797632][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-02.jpg]
+[2018-11-26 19:41:26,710][Thread-20:140455787910912][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-05.jpg]
+[2018-11-26 19:41:26,818][Thread-25:140455413012224][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/bg-title-02.jpg]
+[2018-11-26 19:41:26,836][Thread-23:140455421404928][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-03.jpg]
+[2018-11-26 19:41:26,851][Thread-24:140455797090048][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/bg-title-01.jpg]
+[2018-11-26 19:41:53,441][Thread-33:140455429797632][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-02.jpg]
+[2018-11-26 19:41:53,482][Thread-32:140455778469632][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-01.jpg]
+[2018-11-26 19:41:53,507][Thread-29:140455421404928][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-06.jpg]
+[2018-11-26 19:41:53,531][Thread-28:140455797090048][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/logo.png]
+[2018-11-26 19:41:53,574][Thread-31:140455787910912][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-05.jpg]
+[2018-11-26 19:41:53,596][Thread-30:140455413012224][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-04.jpg]
+[2018-11-26 19:41:53,682][Thread-34:140455404619520][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-03.jpg]
+[2018-11-26 19:41:53,711][Thread-36:140455778469632][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/bg-title-02.jpg]
+[2018-11-26 19:41:53,728][Thread-35:140455429797632][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/bg-title-01.jpg]
+[2018-11-26 19:42:43,982][Thread-42:140455413012224][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-05.jpg]
+[2018-11-26 19:42:43,989][Thread-43:140455803647744][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-01.jpg]
+[2018-11-26 19:42:44,022][Thread-39:140455429797632][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/logo.png]
+[2018-11-26 19:42:44,034][Thread-41:140455404619520][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-04.jpg]
+[2018-11-26 19:42:44,054][Thread-40:140455778469632][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-06.jpg]
+[2018-11-26 19:42:46,277][Thread-46:140455404619520][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/logo.png]
+[2018-11-26 19:42:46,314][Thread-47:140455778469632][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-06.jpg]
+[2018-11-26 19:42:46,317][Thread-49:140455803647744][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-05.jpg]
+[2018-11-26 19:42:46,324][Thread-48:140455429797632][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-04.jpg]
+[2018-11-26 19:42:46,347][Thread-50:140455787910912][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-01.jpg]
+[2018-11-26 19:43:10,244][Thread-53:140455787910912][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/logo.png]
+[2018-11-26 19:43:10,271][Thread-56:140455778469632][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-05.jpg]
+[2018-11-26 19:43:10,292][Thread-54:140455429797632][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-06.jpg]
+[2018-11-26 19:43:10,303][Thread-57:140455421404928][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-01.jpg]
+[2018-11-26 19:43:10,318][Thread-55:140455803647744][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-04.jpg]
+[2018-11-26 19:43:50,430][Thread-58:140455803647744][task_id:django.request][base.py:152][WARNING][Not Found: /crm/chart.html]
+[2018-11-26 19:45:34,566][Thread-64:140455778469632][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-05.jpg]
+[2018-11-26 19:45:34,591][Thread-61:140455803647744][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/logo.png]
+[2018-11-26 19:45:34,617][Thread-62:140455421404928][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-06.jpg]
+[2018-11-26 19:45:34,637][Thread-63:140455429797632][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-04.jpg]
+[2018-11-26 19:45:34,640][Thread-65:140455787910912][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-01.jpg]
+[2018-11-26 19:46:55,211][Thread-69:140455429797632][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-06.jpg]
+[2018-11-26 19:46:55,260][Thread-72:140455778469632][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-01.jpg]
+[2018-11-26 19:46:55,277][Thread-71:140455803647744][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-05.jpg]
+[2018-11-26 19:46:55,293][Thread-68:140455787910912][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/logo.png]
+[2018-11-26 19:46:55,303][Thread-70:140455421404928][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-04.jpg]
+[2018-11-26 19:47:17,599][Thread-78:140455778469632][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-05.jpg]
+[2018-11-26 19:47:17,654][Thread-76:140455421404928][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-06.jpg]
+[2018-11-26 19:47:17,655][Thread-77:140455803647744][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-04.jpg]
+[2018-11-26 19:47:17,674][Thread-75:140455787910912][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/logo.png]
+[2018-11-26 19:47:17,688][Thread-79:140455429797632][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-01.jpg]
+[2018-11-26 19:47:39,143][Thread-82:140455429797632][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/logo.png]
+[2018-11-26 19:47:39,170][Thread-85:140455421404928][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-05.jpg]
+[2018-11-26 19:47:39,187][Thread-86:140455778469632][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-01.jpg]
+[2018-11-26 19:47:39,204][Thread-83:140455787910912][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-06.jpg]
+[2018-11-26 19:47:39,216][Thread-84:140455803647744][task_id:django.request][base.py:152][WARNING][Not Found: /crm/images/icon/avatar-04.jpg]
+[2018-11-26 19:56:57,002][Thread-38:139711187777280][task_id:django.request][exception.py:135][ERROR][Internal Server Error: /crm/cus_list/login.html]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/media/lwx/hexo/githello/SZcrm/crm/views.py", line 87, in get
+    return render(request, 'index.html', data_dict)
+  File "/usr/local/lib/python3.6/dist-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 312, in do_extends
+    nodelist = parser.parse()
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 251, in do_block
+    raise TemplateSyntaxError("'%s' tag with name '%s' appears more than once" % (bits[0], block_name))
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'table-thead' appears more than once
+[2018-11-26 19:57:08,950][Thread-39:139711187777280][task_id:django.request][exception.py:135][ERROR][Internal Server Error: /crm/cus_list/login.html]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/media/lwx/hexo/githello/SZcrm/crm/views.py", line 87, in get
+    return render(request, 'index.html', data_dict)
+  File "/usr/local/lib/python3.6/dist-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 312, in do_extends
+    nodelist = parser.parse()
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 251, in do_block
+    raise TemplateSyntaxError("'%s' tag with name '%s' appears more than once" % (bits[0], block_name))
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'table-thead' appears more than once
+[2018-11-26 19:57:15,215][Thread-40:139711187777280][task_id:django.request][exception.py:135][ERROR][Internal Server Error: /crm/cus_list/]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/media/lwx/hexo/githello/SZcrm/crm/views.py", line 87, in get
+    return render(request, 'index.html', data_dict)
+  File "/usr/local/lib/python3.6/dist-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 312, in do_extends
+    nodelist = parser.parse()
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 251, in do_block
+    raise TemplateSyntaxError("'%s' tag with name '%s' appears more than once" % (bits[0], block_name))
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'table-thead' appears more than once
+[2018-11-26 20:09:29,431][Thread-9:139645099853568][task_id:django.request][base.py:152][WARNING][Not Found: /]
+[2018-11-26 20:09:30,893][Thread-10:139645099853568][task_id:django.request][base.py:152][WARNING][Not Found: /]
+[2018-11-26 20:10:31,048][Thread-38:139645099853568][task_id:django.request][base.py:152][WARNING][Not Found: /favicon.ico]
+[2018-11-26 20:43:40,845][Thread-274:139974269941504][task_id:django.request][exception.py:135][ERROR][Internal Server Error: /crm/cus_list/]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 507, in parse
+    compile_func = self.tags[command]
+KeyError: 'endblock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/media/lwx/hexo/githello/SZcrm/crm/views.py", line 87, in get
+    return render(request, 'index.html', data_dict)
+  File "/usr/local/lib/python3.6/dist-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 312, in do_extends
+    nodelist = parser.parse()
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 255, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 515, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 513, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/defaulttags.py", line 827, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 509, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 565, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 96: 'endblock', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+[2018-11-26 20:44:28,277][Thread-290:139973911373568][task_id:django.request][base.py:152][WARNING][Not Found: /favicon.ico]
+[2018-11-26 20:48:46,928][Thread-307:139973894588160][task_id:django.request][base.py:152][WARNING][Not Found: /favicon.ico]
+[2018-11-26 20:55:50,627][Thread-5:139994748954368][task_id:django.request][base.py:152][WARNING][Not Found: /favicon.ico]
+[2018-11-26 21:40:04,818][Thread-3:140281565136640][task_id:django.request][exception.py:135][ERROR][Internal Server Error: /crm/enrollment/0/]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/media/lwx/hexo/githello/SZcrm/crm/views.py", line 246, in get
+    return render(request, 'en_list.html', {'enr_obj': Enr_obj})
+  File "/usr/local/lib/python3.6/dist-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/test/utils.py", line 107, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/test/utils.py", line 107, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/usr/local/lib/python3.6/dist-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/django/urls/resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'payment' with arguments '(19,)' not found. 1 pattern(s) tried: ['crm/payment']
+[2018-11-26 22:12:38,890][Thread-12:140536793491200][task_id:django.request][exception.py:135][ERROR][Internal Server Error: /crm/edit_pay/12]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/lwx/hexo/githello/SZcrm/crm/views.py", line 311, in edit_pay
+    if form_obj.is_valid():
+  File "/usr/local/lib/python3.6/dist-packages/django/forms/forms.py", line 183, in is_valid
+    return self.is_bound and not self.errors
+  File "/usr/local/lib/python3.6/dist-packages/django/forms/forms.py", line 175, in errors
+    self.full_clean()
+  File "/usr/local/lib/python3.6/dist-packages/django/forms/forms.py", line 384, in full_clean
+    self._clean_fields()
+  File "/usr/local/lib/python3.6/dist-packages/django/forms/forms.py", line 396, in _clean_fields
+    value = field.widget.value_from_datadict(self.data, self.files, self.add_prefix(name))
+  File "/usr/local/lib/python3.6/dist-packages/django/forms/widgets.py", line 641, in value_from_datadict
+    getter = data.get
+AttributeError: 'str' object has no attribute 'get'
+[2018-11-26 22:38:41,993][Thread-9:140231470143232][task_id:django.request][exception.py:135][ERROR][Internal Server Error: /crm/edit_pay/16]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/lwx/hexo/githello/SZcrm/crm/views.py", line 314, in edit_pay
+    return redirect(reverse('crm:payment'))
+  File "/usr/local/lib/python3.6/dist-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/django/urls/resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'payment' with no arguments not found. 1 pattern(s) tried: ['crm/payment/(?P<customer_id>\\d+)$']
+[2018-11-26 22:51:02,584][Thread-9:139946924627712][task_id:django.request][exception.py:135][ERROR][Internal Server Error: /crm/edit_pay/111]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/lwx/hexo/githello/SZcrm/crm/views.py", line 314, in edit_pay
+    return redirect(reverse('crm:payment', kwargs={'enrollment_id':enrollment_id}))
+  File "/usr/local/lib/python3.6/dist-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/usr/local/lib/python3.6/dist-packages/django/urls/resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'payment' with keyword arguments '{'enrollment_id': '111'}' not found. 1 pattern(s) tried: ['crm/payment/(?P<customer_id>\\d+)$']
+[2018-11-26 22:52:03,467][Thread-1:140652452312832][task_id:django.request][exception.py:135][ERROR][Internal Server Error: /crm/edit_pay/111]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/lwx/hexo/githello/SZcrm/crm/views.py", line 308, in edit_pay
+    pay_obj = PaymentRecord(customer_id=enrollment_id)
+NameError: name 'enrollment_id' is not defined
+[2018-11-26 22:52:40,560][Thread-1:139803869837056][task_id:django.request][exception.py:135][ERROR][Internal Server Error: /crm/edit_pay/111]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/lwx/hexo/githello/SZcrm/crm/views.py", line 308, in edit_pay
+    pay_obj = PaymentRecord(customer_id=enrollment_id)
+NameError: name 'enrollment_id' is not defined
+[2018-11-26 22:52:58,946][Thread-6:139803869837056][task_id:django.request][exception.py:135][ERROR][Internal Server Error: /crm/edit_pay/69]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/media/lwx/hexo/githello/SZcrm/crm/views.py", line 308, in edit_pay
+    pay_obj = PaymentRecord(customer_id=enrollment_id)
+NameError: name 'enrollment_id' is not defined
+[2018-11-27 00:04:19,669][Thread-3:140094920980224][task_id:django.request][base.py:152][WARNING][Not Found: /ａｄｍｉｎ]
+[2018-11-27 00:25:06,520][Thread-4:139686128027392][task_id:django.request][base.py:152][WARNING][Not Found: /favicon.ico]
+[2018-11-27 00:26:04,594][Thread-4:139998036883200][task_id:django.request][base.py:152][WARNING][Not Found: /favicon.ico]
+[2018-11-27 00:26:14,489][Thread-5:139998036883200][task_id:django.request][exception.py:135][ERROR][Internal Server Error: /crm/login/]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/media/lwx/hexo/githello/SZcrm/crm/auth_views.py", line 40, in post
+    print(permission_list.count())
+TypeError: count() takes exactly one argument (0 given)
+[2018-11-27 00:26:14,977][Thread-6:139998036883200][task_id:django.request][base.py:152][WARNING][Not Found: /favicon.ico]

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26152c3d-3f5a-4dcd-ac8e-21c5577e015c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../SZcrm.2018-11-21.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SZcrm/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/SZcrm/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SZcrm/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/SZcrm/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crm/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crm/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crm/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm/models.py" afterDir="false" />
@@ -13,12 +13,12 @@
       <change beforePath="$PROJECT_DIR$/crm/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/crm/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/book_err_eroor.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/book_err_eroor.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/book_info_sf.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/book_info_sf.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/add_class.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_class.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/class_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/class_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/en_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/en_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/record_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/record_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SZcrm1124.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SZcrm_1123.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tpx_mintidea.zip" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +66,8 @@
     <session id="181292083">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="13" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.14" value="2" />
@@ -80,7 +81,7 @@
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -90,9 +91,9 @@
           <entry key="crm_studyrecord" value="1" />
           <entry key="crm_userprofile" value="2" />
           <entry key="css" value="1" />
-          <entry key="html" value="83" />
+          <entry key="html" value="91" />
           <entry key="log" value="1" />
-          <entry key="py" value="87" />
+          <entry key="py" value="102" />
           <entry key="sqlite3" value="1" />
         </counts>
       </usages-collector>
@@ -100,24 +101,26 @@
         <counts>
           <entry key="CSS" value="1" />
           <entry key="Database Element" value="6" />
-          <entry key="HTML" value="83" />
+          <entry key="HTML" value="91" />
           <entry key="Log" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="87" />
+          <entry key="Python" value="102" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Django Console" value="25" />
           <entry key="cell" value="4" />
-          <entry key="html" value="1855" />
-          <entry key="py" value="6557" />
+          <entry key="html" value="2274" />
+          <entry key="py" value="7798" />
+          <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="1855" />
-          <entry key="Python" value="6582" />
+          <entry key="HTML" value="2274" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="Python" value="7823" />
           <entry key="Scratch" value="4" />
         </counts>
       </usages-collector>
@@ -125,70 +128,73 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/crm/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="295" lean-forward="true" selection-start-line="295" selection-end-line="295" />
+            <state relative-caret-position="252">
+              <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
               <folding>
-                <element signature="e#581#606#0" />
-                <element signature="e#651#5382#0" />
-                <element signature="e#651#918#1" />
-                <element signature="e#1008#2648#0" />
-                <element signature="e#1073#1098#0" />
-                <element signature="e#1367#1504#0" />
-                <element signature="e#1531#1647#0" />
-                <element signature="e#1738#1838#0" />
-                <element signature="e#2133#2142#0" />
-                <element signature="e#2396#2591#0" />
-                <element signature="e#2725#3155#0" />
-                <element signature="e#3197#4752#0" />
-                <element signature="e#3250#3280#0" />
-                <element signature="e#3447#3586#0" />
-                <element signature="e#3596#3613#0" />
-                <element signature="e#3678#4511#0" />
-                <element signature="e#3981#4428#0" />
-                <element signature="e#4521#4542#0" />
-                <element signature="e#4790#4988#0" />
-                <element signature="e#4891#4911#0" />
-                <element signature="e#5047#5382#0" />
-                <element signature="e#5204#5223#0" />
-                <element signature="e#5422#6537#0" />
-                <element signature="e#5422#5566#1" />
-                <element signature="e#5652#5895#0" />
-                <element signature="e#5819#5894#0" />
-                <element signature="e#5982#6537#0" />
-                <element signature="e#6203#6448#0" />
-                <element signature="e#6250#6281#0" />
-                <element signature="e#6594#6775#0" />
-                <element signature="e#6698#6774#0" />
-                <element signature="e#6827#7525#0" />
-                <element signature="e#7155#7411#0" />
-                <element signature="e#7280#7411#0" />
-                <element signature="e#7460#7524#0" />
-                <element signature="e#7567#7984#0" />
-                <element signature="e#7652#7984#0" />
-                <element signature="e#7690#7802#0" />
-                <element signature="e#7829#7915#0" />
-                <element signature="e#8018#9798#0" />
-                <element signature="e#8120#8655#0" />
-                <element signature="e#8339#8529#0" />
-                <element signature="e#8764#9798#0" />
-                <element signature="e#8808#8831#0" />
-                <element signature="e#9208#9673#0" />
-                <element signature="e#9208#9223#0" />
-                <element signature="e#9700#9798#0" />
-                <marker date="1543232023662" expanded="true" signature="9900:9904" ph="..." />
+                <element signature="e#7#21#0" expanded="true" />
+                <element signature="e#656#923#1" />
+                <element signature="e#1078#1103#0" />
+                <element signature="e#1372#1509#0" />
+                <element signature="e#1536#1652#0" />
+                <element signature="e#1743#1843#0" />
+                <element signature="e#2138#2147#0" />
+                <element signature="e#2401#2596#0" />
+                <element signature="e#2730#3160#0" />
+                <element signature="e#3202#4757#0" />
+                <element signature="e#3255#3285#0" />
+                <element signature="e#3452#3591#0" />
+                <element signature="e#3601#3618#0" />
+                <element signature="e#3683#4516#0" />
+                <element signature="e#3986#4433#0" />
+                <element signature="e#4526#4547#0" />
+                <element signature="e#4795#4993#0" />
+                <element signature="e#4896#4916#0" />
+                <element signature="e#5052#5387#0" />
+                <element signature="e#5209#5228#0" />
+                <element signature="e#5427#6542#0" />
+                <element signature="e#5427#5571#1" />
+                <element signature="e#5657#5900#0" />
+                <element signature="e#5824#5899#0" />
+                <element signature="e#5987#6542#0" />
+                <element signature="e#6208#6453#0" />
+                <element signature="e#6255#6286#0" />
+                <element signature="e#6599#6780#0" />
+                <element signature="e#6703#6779#0" />
+                <element signature="e#6832#7530#0" />
+                <element signature="e#7160#7416#0" />
+                <element signature="e#7285#7416#0" />
+                <element signature="e#7465#7529#0" />
+                <element signature="e#7572#7989#0" />
+                <element signature="e#7657#7989#0" />
+                <element signature="e#7695#7807#0" />
+                <element signature="e#7834#7920#0" />
+                <element signature="e#8031#9811#0" />
+                <element signature="e#8133#8668#0" />
+                <element signature="e#8352#8542#0" />
+                <element signature="e#8777#9811#0" />
+                <element signature="e#8821#8844#0" />
+                <element signature="e#9221#9686#0" />
+                <element signature="e#9221#9236#0" />
+                <element signature="e#9713#9811#0" />
+                <element signature="e#9859#9905#0" />
+                <element signature="e#9961#10091#0" />
+                <element signature="e#10168#10604#0" />
+                <element signature="e#10315#10541#0" />
+                <element signature="e#10420#10541#0" />
+                <marker date="1543249771825" expanded="false" signature="10671:10672" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crm/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="605">
-              <caret line="47" column="57" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
+            <state relative-caret-position="280">
+              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -197,33 +203,59 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html">
+        <entry file="file://$PROJECT_DIR$/crm/auth_views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+            <state relative-caret-position="217">
+              <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="42" selection-end-column="50" />
+              <folding>
+                <element signature="e#7#21#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
+        <entry file="file://$PROJECT_DIR$/SZcrm/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-159">
-              <caret line="75" column="80" selection-start-line="75" selection-start-column="80" selection-end-line="75" selection-end-column="80" />
+            <state relative-caret-position="541">
+              <caret line="247" column="22" selection-start-line="247" selection-end-line="247" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/CoolAdmin/index2.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/CoolAdmin/index.html">
+        <entry file="file://$PROJECT_DIR$/crm/teacher_views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="553">
-              <caret line="1009" column="52" selection-start-line="1009" selection-start-column="52" selection-end-line="1009" selection-end-column="52" />
+            <state relative-caret-position="273">
+              <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+              <folding>
+                <element signature="e#387#603#0" />
+                <element signature="e#419#532#0" />
+                <element signature="e#571#603#0" />
+                <element signature="e#654#1178#0" />
+                <element signature="e#798#1048#0" />
+                <element signature="e#887#957#0" />
+                <element signature="e#1113#1177#0" />
+                <element signature="e#1232#2987#0" />
+                <element signature="e#1276#1788#0" />
+                <element signature="e#1589#1726#0" />
+                <element signature="e#1837#2366#0" />
+                <element signature="e#2274#2366#0" />
+                <element signature="e#2433#2987#0" />
+                <element signature="e#2523#2543#0" />
+                <element signature="e#2636#2950#0" />
+                <element signature="e#2751#2887#0" />
+                <element signature="e#3038#4006#0" />
+                <element signature="e#3105#3507#0" />
+                <element signature="e#3581#4006#0" />
+                <element signature="e#3759#3879#0" />
+                <element signature="e#3900#3945#0" />
+                <element signature="e#4067#5270#0" />
+                <element signature="e#4067#4554#1" />
+                <element signature="e#4560#4598#0" />
+                <element signature="e#4963#5196#0" />
+                <element signature="e#5152#5196#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -245,6 +277,8 @@
       <find>add_course</find>
       <find>course_choices</find>
       <find>customer_id</find>
+      <find>table</find>
+      <find>col-lg-9</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -259,7 +293,6 @@
         <option value="$PROJECT_DIR$/orm.py" />
         <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/templates/privata_list.html" />
-        <option value="$PROJECT_DIR$/crm/admin.py" />
         <option value="$PROJECT_DIR$/templates/edit_record.html" />
         <option value="$PROJECT_DIR$/../../Python视频/笔记代码/day75/knight/crm/views.py" />
         <option value="$PROJECT_DIR$/utils/mypage.py" />
@@ -267,20 +300,23 @@
         <option value="$PROJECT_DIR$/templates/add_cus.html" />
         <option value="$PROJECT_DIR$/SZcrm/urls.py" />
         <option value="$PROJECT_DIR$/templates/class_list.html" />
-        <option value="$PROJECT_DIR$/crm/auth_views.py" />
         <option value="$PROJECT_DIR$/templates/record_list.html" />
         <option value="$PROJECT_DIR$/templates/course_list.html" />
-        <option value="$PROJECT_DIR$/crm/models.py" />
-        <option value="$PROJECT_DIR$/SZcrm/settings.py" />
-        <option value="$PROJECT_DIR$/crm/forms.py" />
         <option value="$PROJECT_DIR$/crm/teacher_views.py" />
-        <option value="$PROJECT_DIR$/templates/en_list.html" />
         <option value="$PROJECT_DIR$/templates/student_list.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/CoolAdmin/index.html" />
-        <option value="$PROJECT_DIR$/crm/views.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/crm/forms.py" />
+        <option value="$PROJECT_DIR$/templates/edit_pay.html" />
+        <option value="$PROJECT_DIR$/templates/en_list.html" />
+        <option value="$PROJECT_DIR$/templates/pay_list.html" />
+        <option value="$PROJECT_DIR$/crm/admin.py" />
+        <option value="$PROJECT_DIR$/crm/models.py" />
         <option value="$PROJECT_DIR$/crm/urls.py" />
+        <option value="$PROJECT_DIR$/SZcrm/settings.py" />
+        <option value="$PROJECT_DIR$/crm/auth_views.py" />
+        <option value="$PROJECT_DIR$/crm/views.py" />
       </list>
     </option>
   </component>
@@ -330,11 +366,6 @@
             </path>
             <path>
               <item name="SZcrm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SZcrm" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SZcrm" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -348,16 +379,16 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/templates" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/utils" />
       <recent name="$PROJECT_DIR$/static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -478,6 +509,14 @@
       <option name="presentableId" value="Default" />
       <updated>1542600176578</updated>
     </task>
+    <task id="LOCAL-00001" summary="1126">
+      <created>1543232225784</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1543232225784</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -491,23 +530,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="0" width="1853" height="1080" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49832776" visible="true" weight="0.20369335" />
-      <window_info id="Structure" order="1" sideWeight="0.50167227" side_tool="true" weight="0.25741467" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Structure" order="0" sideWeight="0.50167227" side_tool="true" weight="0.25741467" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49832776" visible="true" weight="0.20705092" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49748182" weight="0.41209406" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5576708" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32998884" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.5576708" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49524343" weight="0.3975364" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49916062" weight="0.32922733" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5025182" side_tool="true" weight="0.42028984" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32887402" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50475657" side_tool="true" weight="0.3975364" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3281075" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32887402" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.32887402" />
       <window_info anchor="bottom" id="Thumbnails" order="14" weight="0.32963374" />
@@ -549,42 +587,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="django-line">
-          <url>file://$PROJECT_DIR$/templates/index.html</url>
-          <line>36</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1126" />
+    <option name="LAST_COMMIT_MESSAGE" value="1126" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/orm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/-1247971763/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137895">
-          <caret line="4755" column="12" selection-start-line="4755" selection-start-column="12" selection-end-line="4755" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.6/dist-packages/django/forms/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1802">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/app01/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
@@ -704,13 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crm/auth_views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/reg.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-319">
@@ -760,27 +760,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/crm/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/CoolAdmin/index2.html" />
     <entry file="file://$PROJECT_DIR$/templates/course_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="-385">
           <caret line="53" column="108" selection-start-line="53" selection-start-column="108" selection-end-line="53" selection-end-column="108" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crm/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SZcrm/settings.py">
+    <entry file="file://$PROJECT_DIR$/templates/CoolAdmin/index.html" />
+    <entry file="file://$PROJECT_DIR$/templates/CoolAdmin/table.html" />
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5635">
-          <caret line="161" selection-start-line="161" selection-end-line="161" />
+        <state relative-caret-position="3255">
+          <caret line="93" column="22" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#link#3;n#head#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crm/admin.py">
+    <entry file="file://$PROJECT_DIR$/templates/student_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+        <state relative-caret-position="-987">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="81" column="51" selection-start-line="79" selection-start-column="42" selection-end-line="81" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -791,142 +804,269 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/edit_record.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-200">
+          <caret line="4" column="64" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/en_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="50" column="28" lean-forward="true" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
+        <state relative-caret-position="278">
+          <caret line="64" column="78" selection-start-line="64" selection-start-column="70" selection-end-line="64" selection-end-column="78" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crm/models.py">
+    <entry file="file://$PROJECT_DIR$/templates/edit_pay.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="89" column="27" lean-forward="true" selection-start-line="89" selection-start-column="27" selection-end-line="89" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-42">
+          <caret line="8" column="44" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/student_list.html">
+    <entry file="file://$PROJECT_DIR$/templates/pay_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        <state relative-caret-position="567">
+          <caret line="39" column="106" selection-start-line="39" selection-start-column="106" selection-end-line="39" selection-end-column="106" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/crm/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="106" selection-start-line="106" selection-end-line="106" />
+        <state relative-caret-position="207">
+          <caret line="141" column="23" selection-start-line="141" selection-start-column="23" selection-end-line="141" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#124#1" />
+            <element signature="e#125#149#0" expanded="true" />
+            <element signature="e#376#582#0" />
+            <element signature="e#421#582#0" />
+            <element signature="e#628#1605#0" />
+            <element signature="e#783#1042#0" />
+            <element signature="e#919#1042#0" />
+            <element signature="e#1079#1280#0" />
+            <element signature="e#1311#1605#0" />
+            <element signature="e#1514#1605#0" />
+            <element signature="e#1643#2075#0" />
+            <element signature="e#1663#1863#0" />
+            <element signature="e#1726#1863#0" />
+            <element signature="e#1914#2075#0" />
+            <element signature="e#2118#2661#0" />
+            <element signature="e#2138#2226#0" />
+            <element signature="e#2277#2661#0" />
+            <element signature="e#2584#2661#0" />
+            <element signature="e#2714#3184#0" />
+            <element signature="e#2734#2838#0" />
+            <element signature="e#2889#3184#0" />
+            <element signature="e#3008#3079#0" />
+            <element signature="e#3237#3301#0" />
+            <element signature="e#3257#3301#0" />
+            <element signature="e#3355#3572#0" />
+            <element signature="e#3375#3487#0" />
+            <element signature="e#3539#3572#0" />
+            <element signature="e#3627#3778#0" />
+            <element signature="e#3647#3694#0" />
+            <element signature="e#3745#3778#0" />
+            <marker date="1543237934714" expanded="true" signature="3835:3910" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/edit_record.html">
+    <entry file="file://$PROJECT_DIR$/crm/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-182">
-          <caret line="4" column="64" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
+        <state relative-caret-position="225">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+          <folding>
+            <marker date="1543248248096" expanded="true" signature="824:894" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crm/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="459" lean-forward="true" selection-start-line="459" selection-end-line="459" />
+          <folding>
+            <element signature="e#246#335#0" />
+            <element signature="e#366#479#0" />
+            <element signature="e#376#402#0" />
+            <element signature="e#447#472#0" />
+            <element signature="e#503#728#0" />
+            <element signature="e#757#872#0" />
+            <element signature="e#903#1049#0" />
+            <element signature="e#1077#1169#0" />
+            <element signature="e#1200#1311#0" />
+            <element signature="e#1337#1531#0" />
+            <element signature="e#1570#4335#0" />
+            <element signature="e#1570#1589#1" />
+            <element signature="e#3667#3683#0" />
+            <element signature="e#3709#3773#0" />
+            <element signature="e#3814#3870#0" />
+            <element signature="e#3907#4335#0" />
+            <element signature="e#3956#4103#0" />
+            <element signature="e#4372#4690#0" />
+            <element signature="e#4372#4391#1" />
+            <element signature="e#4586#4602#0" />
+            <element signature="e#4628#4690#0" />
+            <element signature="e#4735#4903#0" />
+            <element signature="e#4735#4756#1" />
+            <element signature="e#4941#6204#0" />
+            <element signature="e#4941#4960#1" />
+            <element signature="e#5745#5870#0" />
+            <element signature="e#5903#6017#0" />
+            <element signature="e#6056#6081#0" />
+            <element signature="e#6119#6204#0" />
+            <element signature="e#6246#6761#0" />
+            <element signature="e#6246#6267#1" />
+            <element signature="e#6800#7708#0" />
+            <element signature="e#6800#6819#1" />
+            <element signature="e#7659#7708#0" />
+            <element signature="e#7750#9124#0" />
+            <element signature="e#7750#7771#1" />
+            <element signature="e#8733#8764#0" />
+            <element signature="e#9165#10206#0" />
+            <element signature="e#10019#10060#0" />
+            <element signature="e#10093#10117#0" />
+            <element signature="e#10152#10206#0" />
+            <element signature="e#10246#11012#0" />
+            <element signature="e#10246#10266#1" />
+            <element signature="e#10946#11012#0" />
+            <element signature="e#11051#11221#0" />
+            <element signature="e#11205#11221#0" />
+            <element signature="e#11264#12436#0" />
+            <element signature="e#11359#11713#0" />
+            <element signature="e#11359#11442#1" />
+            <element signature="e#11788#11951#0" />
+            <element signature="e#12026#12436#0" />
+            <element signature="e#12876#12994#0" />
+            <element signature="e#13486#13544#0" />
+            <element signature="e#13575#13679#0" />
+            <element signature="e#13718#13790#0" />
+            <element signature="e#13830#13903#0" />
+            <element signature="e#13963#13980#0" />
+            <marker date="1543248389990" expanded="true" signature="14371:14630" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/crm/teacher_views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4760">
-          <caret line="149" column="30" lean-forward="true" selection-start-line="149" selection-start-column="30" selection-end-line="149" selection-end-column="30" />
+        <state relative-caret-position="273">
+          <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
           <folding>
-            <element signature="e#0#45#0" expanded="true" />
-            <element signature="e#4040#4405#1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-159">
-          <caret line="75" column="80" selection-start-line="75" selection-start-column="80" selection-end-line="75" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/CoolAdmin/index2.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/CoolAdmin/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="1009" column="52" selection-start-line="1009" selection-start-column="52" selection-end-line="1009" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crm/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="295" lean-forward="true" selection-start-line="295" selection-end-line="295" />
-          <folding>
-            <element signature="e#581#606#0" />
-            <element signature="e#651#5382#0" />
-            <element signature="e#651#918#1" />
-            <element signature="e#1008#2648#0" />
-            <element signature="e#1073#1098#0" />
-            <element signature="e#1367#1504#0" />
-            <element signature="e#1531#1647#0" />
-            <element signature="e#1738#1838#0" />
-            <element signature="e#2133#2142#0" />
-            <element signature="e#2396#2591#0" />
-            <element signature="e#2725#3155#0" />
-            <element signature="e#3197#4752#0" />
-            <element signature="e#3250#3280#0" />
-            <element signature="e#3447#3586#0" />
-            <element signature="e#3596#3613#0" />
-            <element signature="e#3678#4511#0" />
-            <element signature="e#3981#4428#0" />
-            <element signature="e#4521#4542#0" />
-            <element signature="e#4790#4988#0" />
-            <element signature="e#4891#4911#0" />
-            <element signature="e#5047#5382#0" />
-            <element signature="e#5204#5223#0" />
-            <element signature="e#5422#6537#0" />
-            <element signature="e#5422#5566#1" />
-            <element signature="e#5652#5895#0" />
-            <element signature="e#5819#5894#0" />
-            <element signature="e#5982#6537#0" />
-            <element signature="e#6203#6448#0" />
-            <element signature="e#6250#6281#0" />
-            <element signature="e#6594#6775#0" />
-            <element signature="e#6698#6774#0" />
-            <element signature="e#6827#7525#0" />
-            <element signature="e#7155#7411#0" />
-            <element signature="e#7280#7411#0" />
-            <element signature="e#7460#7524#0" />
-            <element signature="e#7567#7984#0" />
-            <element signature="e#7652#7984#0" />
-            <element signature="e#7690#7802#0" />
-            <element signature="e#7829#7915#0" />
-            <element signature="e#8018#9798#0" />
-            <element signature="e#8120#8655#0" />
-            <element signature="e#8339#8529#0" />
-            <element signature="e#8764#9798#0" />
-            <element signature="e#8808#8831#0" />
-            <element signature="e#9208#9673#0" />
-            <element signature="e#9208#9223#0" />
-            <element signature="e#9700#9798#0" />
-            <marker date="1543232023662" expanded="true" signature="9900:9904" ph="..." />
+            <element signature="e#387#603#0" />
+            <element signature="e#419#532#0" />
+            <element signature="e#571#603#0" />
+            <element signature="e#654#1178#0" />
+            <element signature="e#798#1048#0" />
+            <element signature="e#887#957#0" />
+            <element signature="e#1113#1177#0" />
+            <element signature="e#1232#2987#0" />
+            <element signature="e#1276#1788#0" />
+            <element signature="e#1589#1726#0" />
+            <element signature="e#1837#2366#0" />
+            <element signature="e#2274#2366#0" />
+            <element signature="e#2433#2987#0" />
+            <element signature="e#2523#2543#0" />
+            <element signature="e#2636#2950#0" />
+            <element signature="e#2751#2887#0" />
+            <element signature="e#3038#4006#0" />
+            <element signature="e#3105#3507#0" />
+            <element signature="e#3581#4006#0" />
+            <element signature="e#3759#3879#0" />
+            <element signature="e#3900#3945#0" />
+            <element signature="e#4067#5270#0" />
+            <element signature="e#4067#4554#1" />
+            <element signature="e#4560#4598#0" />
+            <element signature="e#4963#5196#0" />
+            <element signature="e#5152#5196#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/crm/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="47" column="57" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
+        <state relative-caret-position="280">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SZcrm/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="247" column="22" selection-start-line="247" selection-end-line="247" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crm/auth_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="42" selection-end-column="50" />
+          <folding>
+            <element signature="e#7#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crm/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+          <folding>
+            <element signature="e#7#21#0" expanded="true" />
+            <element signature="e#656#923#1" />
+            <element signature="e#1078#1103#0" />
+            <element signature="e#1372#1509#0" />
+            <element signature="e#1536#1652#0" />
+            <element signature="e#1743#1843#0" />
+            <element signature="e#2138#2147#0" />
+            <element signature="e#2401#2596#0" />
+            <element signature="e#2730#3160#0" />
+            <element signature="e#3202#4757#0" />
+            <element signature="e#3255#3285#0" />
+            <element signature="e#3452#3591#0" />
+            <element signature="e#3601#3618#0" />
+            <element signature="e#3683#4516#0" />
+            <element signature="e#3986#4433#0" />
+            <element signature="e#4526#4547#0" />
+            <element signature="e#4795#4993#0" />
+            <element signature="e#4896#4916#0" />
+            <element signature="e#5052#5387#0" />
+            <element signature="e#5209#5228#0" />
+            <element signature="e#5427#6542#0" />
+            <element signature="e#5427#5571#1" />
+            <element signature="e#5657#5900#0" />
+            <element signature="e#5824#5899#0" />
+            <element signature="e#5987#6542#0" />
+            <element signature="e#6208#6453#0" />
+            <element signature="e#6255#6286#0" />
+            <element signature="e#6599#6780#0" />
+            <element signature="e#6703#6779#0" />
+            <element signature="e#6832#7530#0" />
+            <element signature="e#7160#7416#0" />
+            <element signature="e#7285#7416#0" />
+            <element signature="e#7465#7529#0" />
+            <element signature="e#7572#7989#0" />
+            <element signature="e#7657#7989#0" />
+            <element signature="e#7695#7807#0" />
+            <element signature="e#7834#7920#0" />
+            <element signature="e#8031#9811#0" />
+            <element signature="e#8133#8668#0" />
+            <element signature="e#8352#8542#0" />
+            <element signature="e#8777#9811#0" />
+            <element signature="e#8821#8844#0" />
+            <element signature="e#9221#9686#0" />
+            <element signature="e#9221#9236#0" />
+            <element signature="e#9713#9811#0" />
+            <element signature="e#9859#9905#0" />
+            <element signature="e#9961#10091#0" />
+            <element signature="e#10168#10604#0" />
+            <element signature="e#10315#10541#0" />
+            <element signature="e#10420#10541#0" />
+            <marker date="1543249771825" expanded="false" signature="10671:10672" ph="..." />
           </folding>
         </state>
       </provider>

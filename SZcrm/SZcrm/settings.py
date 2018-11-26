@@ -238,3 +238,12 @@ LOGGING = {
         }
     },
 }
+# 权限组件的相关配置
+WHITE_URLS = [
+    '/login/',
+    '/logout/',
+    '/reg/',
+    '/admin/.*',
+]
+PERMISSION_SESSION_KEY = 'permission_url'
+
