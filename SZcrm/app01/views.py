@@ -2,6 +2,9 @@ from django.shortcuts import render, HttpResponse, redirect
 from app01.models import Person
 from app01.forms import Personform
 from django.urls import reverse
+from crm.models import UserProfile
+
+from SZcrm import settings
 from django.http import JsonResponse
 # Create your views here.
 
@@ -28,5 +31,51 @@ def edit_person(request):
 
 
     return render(request, 'app01/edit_person.html', {'form_obj': form_obj})
+
+
+import xlrd
+def update(request):
+    if request.method == 'POST':
+        file_obj = request.FILES.get('filename')
+        print(file_obj.name,len(file_obj))
+        # print(len(file_obj))
+        # with open(file_obj.name, 'wb') as f:
+        #     for i in file_obj:
+        #         f.write(i)
+        # print('#'*120)
+        workbook = xlrd.open_workbook(file_contents=file_obj.file.read())
+        print(workbook)
+        # 工作表一
+        row_map = {
+            0: {
+                'text': '邮件',
+                'name': 'email'
+            },
+            1: {
+                'text': '姓名',
+                'name': 'name'
+            },
+            2: {
+                'text': '密码',
+                'name': 'password'
+            },
+
+        }
+        sheet = workbook.sheet_by_index(0)
+        print(sheet)
+        object_list = []
+        for row_num in range(1, sheet.nrows):
+            row = sheet.row(row_num)
+            row_dict = {}
+            for col_num, name_text in row_map.items():
+                row_dict[name_text['name']] = row[col_num].value
+            print(row_dict)
+            UserProfile.objects.create_user(**row_dict)
+
+        return HttpResponse('OK')
+    return render(request, 'app01/downup.html')
+
+
+
 
 
