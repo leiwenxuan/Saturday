@@ -54,6 +54,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware',
+    'mymiddleware.user_role.UserPermission',
 ]
 
 ROOT_URLCONF = 'SZcrm.urls'
@@ -240,9 +241,9 @@ LOGGING = {
 }
 # 权限组件的相关配置
 WHITE_URLS = [
-    '/login/',
-    '/logout/',
-    '/reg/',
+    '/crm/login/',
+    '/crm/logout/',
+    '/crm/reg/',
     '/admin/.*',
 ]
 PERMISSION_SESSION_KEY = 'permission_url'
