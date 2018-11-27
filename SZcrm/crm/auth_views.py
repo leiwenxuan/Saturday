@@ -7,7 +7,7 @@ from django.shortcuts import HttpResponse, redirect, render
 from django.urls import reverse
 from django.views import View
 from geetest import GeetestLib
-from SZcrm import settings
+from rbac.utils import permission
 
 from crm.forms import RegisteredForm
 from crm.models import UserProfile
@@ -32,17 +32,17 @@ class LoginViews(View):
             print('7' * 20)
             # 把登陆用户加入
             auth.login(request, user_obj)
-
-            # 从userinfo　获取ｕｒｌ
-            # url_list = UserProfile.objects.all().values_list('role__permissions__url')
-            # 跨表查询ｕｒｌ
-            url_list = user_obj.role.all().filter(permissions__isnull=False).values_list('permissions__url')
-            permission_list = [permission[0] for permission in url_list]
-            print(permission_list)
-            print('#'*40)
-            # 获取setting 设置的值
-            key = getattr(settings,'PERMISSION_SESSION_KEY', 'permission_url')
-            request.session[key] = permission_list
+            permission.init(request, user_obj)
+            # # 从userinfo　获取ｕｒｌ
+            # # url_list = UserProfile.objects.all().values_list('role__permissions__url')
+            # # 跨表查询ｕｒｌ
+            # url_list = user_obj.roles.all().filter(permissions__isnull=False).values_list('permissions__url')
+            # permission_list = [permission[0] for permission in url_list]
+            # print(permission_list)
+            # print('#'*40)
+            # # 获取setting 设置的值
+            # key = getattr(settings,'PERMISSION_SESSION_KEY', 'permission_url')
+            # request.session[key] = permission_list
             # 判断是否选中７天免登陆
             if is_check:
                 request.session.set_expiry(7 * 24 * 60 * 60)

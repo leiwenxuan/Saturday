@@ -54,7 +54,7 @@
                                 <th>咨询日期</th>
                                 <th style="width: 48px!important;">已报班级</th>
                                 <th style="width: 48px!important;">沟通记录</th>
-                                <th>报名</th>
+                                <th style="width: 48px!important;">报名</th>
                                 <th>操作</th>
                             </tr>
                             </thead>
@@ -81,8 +81,7 @@
                                                 class="glyphicon glyphicon-plus" aria-hidden="true">
                                             </span>
                                         </a>
-
-                                        <a href="{% url 'crm:enrollment' customer.id %}">查看</a>
+                                       <a href="{% url 'crm:enrollment' customer.id %}"> <i class="fa fa-eye"></i></a>
                                     </td>
 
                                     <td><a href="{% url 'crm:add_cus' customer.id %}?{{ next_url }}"

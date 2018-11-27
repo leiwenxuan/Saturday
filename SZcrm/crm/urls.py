@@ -34,7 +34,7 @@ urlpatterns = [
 
 
     # 班级url视图
-    url(r'class_list', teacher_views.ClasslistViews.as_view(), name='class_list'),
+    url(r'class_list/', teacher_views.ClasslistViews.as_view(), name='class_list'),
     url(r'add_class/(\d+)/$', teacher_views.add_list, name='add_list'),
 
     # 班级记录

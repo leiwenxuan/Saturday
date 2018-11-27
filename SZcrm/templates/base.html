@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{% static 'sweet/sweetalert.css' %}">
     <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
     <link style="background-color: red" rel="icon" href="{% static 'picture/admin .png' %}">
+    <link href="{% static 'font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
 
 
 </head>
@@ -81,13 +82,15 @@
 <div class="container-fluid">
     <div class="row ">
         <div class="col-sm-3 col-md-2 sidebar">
-            <ul class="nav nav-sidebar navbar-inverse">
-                <li class="{% if flag_page == 'cus_list' %}active{% endif %}"><a href="{% url 'crm:cus_list' %}">客户列表</a></li>
-                <li class="{% if flag_page == 'pirvate' %}active{% endif %}"><a href="{% url 'crm:pirvate' %}">我的客户</a></li>
-                <li class="{% if flag_page == 'record_list' %}active{% endif %}"><a href="{% url 'crm:record_list' %}">跟进列表</a></li>
-                <li class="{% if flag_page == '' %}active{% endif %}"><a href="{% url 'crm:enrollment' 0%}">查看我的客户报名表</a></li>
-                <li class="{% if flag_page == '' %}active{% endif %}"><a href="{% url 'crm:class_list' %}">班级管理</a></li>
-            </ul>
+            {% load menu_list %}
+            {% meun_list request %}
+{#            <ul class="nav nav-sidebar navbar-inverse">#}
+{#                <li class="{% if flag_page == 'cus_list' %}active{% endif %}"><a href="{% url 'crm:cus_list' %}">客户列表</a></li>#}
+{#                <li class="{% if flag_page == 'pirvate' %}active{% endif %}"><a href="{% url 'crm:pirvate' %}">我的客户</a></li>#}
+{#                <li class="{% if flag_page == 'record_list' %}active{% endif %}"><a href="{% url 'crm:record_list' %}">跟进列表</a></li>#}
+{#                <li class="{% if flag_page == '' %}active{% endif %}"><a href="{% url 'crm:enrollment' 0%}">查看我的客户报名表</a></li>#}
+{#                <li class="{% if flag_page == '' %}active{% endif %}"><a href="{% url 'crm:class_list' %}">班级管理</a></li>#}
+{#            </ul>#}
 
         </div>
         {% block page-main %}

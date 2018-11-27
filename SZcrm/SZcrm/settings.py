@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'crm.apps.CrmConfig',
     'app01.apps.App01Config',
+    'rbac.apps.PurviewConfig',
     'debug_toolbar',
 
 ]
@@ -54,7 +55,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware',
-    'mymiddleware.user_role.UserPermission',
+    'rbac.mymiddleware.loginwara.LoginMiddle',
 ]
 
 ROOT_URLCONF = 'SZcrm.urls'
@@ -246,5 +247,7 @@ WHITE_URLS = [
     '/crm/reg/',
     '/admin/.*',
 ]
-PERMISSION_SESSION_KEY = 'permission_url'
-
+# 设置session 储存的KEY
+PERMISSION_URL_KEY = 'permissions_url'
+#　设置session 菜单
+SECRET_MENU = 'menu_list'
