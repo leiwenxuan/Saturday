@@ -15,15 +15,15 @@ if __name__ == "__main__":
     # pub_list = Publisher.objects.all().count()
     # print(pub_list)
 
-    # customer = (Customer(qq='8920286{}'.format(i), qq_name='深圳{}'.format(i), name='无言{}'.format(i),
-    #                      course='Golang高级开发',
-    #                      ) for i in range(102,103))
-    # Customer.objects.bulk_create(customer,10)
+    customer = (Customer(qq='8920286{}'.format(i), qq_name='深圳{}'.format(i), name='无言{}'.format(i),
+                         course='Golang高级开发',
+                         ) for i in range(0,30))
+    Customer.objects.bulk_create(customer,10)
 
     # from app01.models import Person
     # person_list = (Person(name='无言{}'.format(i),
     #                       age='{}'.format(i), hobby='读书{}'.format(i) )for i  in range(10))
     #
     # Person.objects.bulk_create(person_list, 10)
-    s = '{1}'.format(7,1)
+    s = '{1}'.format(7, 1)
     print(s)

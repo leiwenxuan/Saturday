@@ -13,7 +13,6 @@ from crm.models import UserProfile, Customer, ConsultRecord, Enrollment, ClassLi
 
 
 class Bootstrapclass(forms.ModelForm):
-
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         # 给没个实例加入样式
@@ -30,7 +29,7 @@ class RegisteredForm(Bootstrapclass):
 
     # 配置 与UserProfile　关联
     class Meta:
-        model = models.UserProfile  # 关联UserProfile　
+        model = models.UserProfile  # 关联UserProfile
         fields = ['email', 'name', 'password', 're_password', 'mobile']
 
         widgets = {
@@ -64,37 +63,46 @@ class Addfrom(Bootstrapclass):
         widgets = {
             'course': forms.widgets.SelectMultiple,
             'birthday': forms.widgets.DateInput(attrs={'type': 'date'}),
-
         }
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         # 给没个实例加入样式
+
         for filed in self.fields.values():
             filed.widget.attrs.update({"class": 'form-control'})
 
+        try:
+            self.fields['consultant'].choices = [
+                (self.instance.consultant.id, self.instance.consultant.name),
+            ]
+        except Exception as e:
+            print('%' * 20)
+
 
 class RecordForms(Bootstrapclass):
-
     class Meta:
         model = ConsultRecord
         # fields = '__all__'
-        exclude = ['delete_status', ]
+        exclude = [
+            'delete_status',
+        ]
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.fields['customer'] = forms.models.ModelChoiceField(
-            queryset=Customer.objects.filter(consultant=self.instance.consultant))
-
+            queryset=Customer.objects.filter(
+                consultant=self.instance.consultant))
+        print(self.fields)
         self.fields['customer'].widget.attrs.update({'class': 'form-control'})
 
         self.fields['consultant'].choices = [
-            (self.instance.consultant.id, self.instance.consultant.name), ]
+            (self.instance.consultant.id, self.instance.consultant.name),
+        ]
 
 
 # 报名表
 class EnrollmentForms(Bootstrapclass):
-
     class Meta:
         model = Enrollment
         # fields = "__all__"
@@ -103,15 +111,14 @@ class EnrollmentForms(Bootstrapclass):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         print(self.instance.customer.name)
-        self.fields['customer'].choices = [
-            (self.instance.customer.id, self.instance.customer.name)]
+        self.fields['customer'].choices = [(self.instance.customer.id,
+                                            self.instance.customer.name)]
 
         # self.fields['customer'].choices = [(self.instance.customer.id, self.instance.customer.name),]
 
 
 # 班级列表form
 class ClassForms(Bootstrapclass):
-
     class Meta:
         model = ClassList
         fields = "__all__"
@@ -119,7 +126,6 @@ class ClassForms(Bootstrapclass):
 
 # 学生列表
 class StudyRecordForm(Bootstrapclass):
-
     class Meta:
         model = StudyRecord
         # fields = '__all__'
@@ -129,9 +135,9 @@ class StudyRecordForm(Bootstrapclass):
 
         super().__init__(*args, **kwargs)
 
+
 # 课程记录表
 class CourseRecordForm(Bootstrapclass):
-
     class Meta:
         model = CourseRecord
         fields = '__all__'
@@ -139,8 +145,8 @@ class CourseRecordForm(Bootstrapclass):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
+
 class PaymentRecordForm(Bootstrapclass):
     class Meta:
         model = PaymentRecord
         fields = '__all__'
-

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
     <link style="background-color: red" rel="icon" href="{% static 'picture/admin .png' %}">
     <link href="{% static 'font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
-
+    <link rel="stylesheet" href="{% static 'css/meun-css.css' %}">
 
 </head>
 <style>
@@ -58,10 +58,17 @@
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
+        {% load menu_list %}
+<div>
+    {% bread_crumb request %}
+</div>
+
 <script src="{% static 'css/jquery.js' %}"></script>
+<script src="{% static 'css/menu-js.js' %}"></script>
 <script src="{% static 'bootstrap-3.3.7/js/bootstrap.js' %}"></script>
 <script src="{% static 'setup_ajax.js' %}"></script>
 <script src="{% static 'sweet/sweetalert.js' %}"></script>
+
 {% block reg %}
     {#    注册继承#}
 {% endblock %}
@@ -79,24 +86,20 @@
 {% block index %}
 {% endblock %}
 
+
+
 <div class="container-fluid">
     <div class="row ">
         <div class="col-sm-3 col-md-2 sidebar">
             {% load menu_list %}
             {% meun_list request %}
-{#            <ul class="nav nav-sidebar navbar-inverse">#}
-{#                <li class="{% if flag_page == 'cus_list' %}active{% endif %}"><a href="{% url 'crm:cus_list' %}">客户列表</a></li>#}
-{#                <li class="{% if flag_page == 'pirvate' %}active{% endif %}"><a href="{% url 'crm:pirvate' %}">我的客户</a></li>#}
-{#                <li class="{% if flag_page == 'record_list' %}active{% endif %}"><a href="{% url 'crm:record_list' %}">跟进列表</a></li>#}
-{#                <li class="{% if flag_page == '' %}active{% endif %}"><a href="{% url 'crm:enrollment' 0%}">查看我的客户报名表</a></li>#}
-{#                <li class="{% if flag_page == '' %}active{% endif %}"><a href="{% url 'crm:class_list' %}">班级管理</a></li>#}
-{#            </ul>#}
-
         </div>
         {% block page-main %}
         {% endblock %}
     </div>
 </div>
+{% block script-page %}
 
+{% endblock %}
 </body>
 </html>

@@ -1,15 +1,41 @@
-<ul class="nav nav-sidebar navbar-inverse">
-    {% for menu in menu_list %}
-        <li class="{{ menu.class }}"><a href="{{ menu.url }}"><span
-                class="icon-wrap"><i
-                class="fa {{ menu.icon }}"></i></span>{{ menu.title }}</a></li>
-    {% endfor %}
-</ul>
 
-{#        <ul class="nav nav-sidebar navbar-inverse">#}
-{#                <li class="{% if flag_page == 'cus_list' %}active{% endif %}"><a href="{% url 'crm:cus_list' %}">客户列表</a></li>#}
-{#                <li class="{% if flag_page == 'pirvate' %}active{% endif %}"><a href="{% url 'crm:pirvate' %}">我的客户</a></li>#}
-{#                <li class="{% if flag_page == 'record_list' %}active{% endif %}"><a href="{% url 'crm:record_list' %}">跟进列表</a></li>#}
-{#                <li class="{% if flag_page == '' %}active{% endif %}"><a href="{% url 'crm:enrollment' 0%}">查看我的客户报名表</a></li>#}
-{#                <li class="{% if flag_page == '' %}active{% endif %}"><a href="{% url 'crm:class_list' %}">班级管理</a></li>#}
-{#            </ul>#}
+{#    {% for menu in menu_list %}#}
+{#        <li class="{{ menu.class }}"><a href="{{ menu.url }}"><span#}
+{#                class="icon-wrap"><i#}
+{#                class="fa {{ menu.icon }}"></i></span>{{ menu.title }}</a></li>#}
+{#    {% endfor %}#}
+
+<div class="multi-menu">
+    {% for menu in menu_list %}
+        <div class="item">
+            <div class="title"><i class="fa {{ menu.icon }}"></i>{{ menu.title }}</div>
+            <div class="body {{ menu.class }}">
+                {% for child in menu.children %}
+                    {% if child.show %}
+                        <a href="{{ child.url }}" class="{{ child.class }}">{{ child.title }}</a>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+{#    <div class="menu">#}
+{#        {% for menu in menu_list %}#}
+{#            <div class="item">#}
+{#                <div class="title {{ menu.class }}">#}
+{#                    <a href="{{ menu.url }}"><span#}
+{#                            class="icon-wrap"><i#}
+{#                            class="fa {{ menu.icon }}"></i></span>{{ menu.title }}</a>#}
+{#                </div>#}
+{#                <div class="body text-center ">#}
+{#                    {% for child in menu.children %}#}
+{#                        <div><a href="{{ child.url }}" class="{{ child.class }}">{{ child.title }}</a></div>#}
+{#                    {% endfor %}#}
+{##}
+{#                </div>#}
+{#            </div>#}
+{#        {% endfor %}#}
+{#    </div>#}
+{% load static %}
+<script src="{% static 'css/menu-js.js' %}"></script>

@@ -137,7 +137,7 @@ class Customer(models.Model):
         'ClassList', verbose_name="已报班级", blank=True, null=True)
 
     def __str__(self):
-        return self.name
+        return '{}'.format(self.name)
 
     class Meta:
         verbose_name = '客户信息'

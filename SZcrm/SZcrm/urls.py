@@ -24,5 +24,6 @@ if settings.DEBUG:
                         
         url(r'^admin/', admin.site.urls),
         url(r'^crm/', include('crm.urls', namespace='crm')),
-        url(r'^app01/', include('app01.urls', namespace='app01'))
+        url(r'^app01/', include('app01.urls', namespace='app01')),
+        url(r'^rbac/', include('rbac.rbac_url', namespace='rbac'))
     ]

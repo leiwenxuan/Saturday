@@ -70,9 +70,6 @@ class IndexViews(View):
         # 获取页面
         page_html = page_obj.page_html()
 
-        # 拼接url函数
-        # a_href = request.GET.urlencode()
-
         # 11.23 获取当前的url
         url = request.get_full_path()
         query_params = QueryDict(mutable=True)
@@ -152,10 +149,10 @@ class IndexViews(View):
         q = Q()
         # 指定Q查询内部的操作是OR还是AND
         q.connector = op
-
         # 遍历要检索的字段， 挨个添加Q对象
         # field_list 传进来的一些自断
         for filed in field_list:
+            # 模糊查找忽略大小写
             q.children.append(Q(('{}__icontains'.format(filed), query_value)))
         return q
 
@@ -172,7 +169,9 @@ class Add_cus(View):
     def get(self, request, cus_id=0):
         print(cus_id)
         cus_obj = Customer.objects.filter(id=cus_id).first()
-        form_obj = Addfrom(instance=cus_obj)
+        # print(cus_obj.consultant, type(cus_obj.consultant))
+        form_obj = Addfrom(
+            instance=cus_obj, initial={'consultant': request.user})
         return render(request, 'add_cus.html', {
             'form_obj': form_obj,
             'edit_id': cus_id

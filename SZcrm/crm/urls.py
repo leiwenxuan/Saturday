@@ -14,13 +14,13 @@ urlpatterns = [
     url(r'^change/', auth_views.ChangeVires.as_view(), name='change'),
 
     # 极验滑动验证码 获取验证码的url
-    url(r'^pc-geetest/register/', auth_views.get_geetest),
-    url(r'^get_valid_img.png/', auth_views.get_valid_img),
+    url(r'^pc-geetest/register/', auth_views.get_geetest, name='register'),
+    url(r'^get_valid_img.png/', auth_views.get_valid_img, name='get_valid_img'),
 
     # 客户相关
     url(r'^cus_list/', views.IndexViews.as_view(), name='cus_list'),
-    url(r'^add_cus/$', views.Add_cus.as_view(), name='add_cus'),
-    url(r'^edit_cus/(\d+)$', views.Add_cus.as_view(), name='add_cus'),  # all
+    url(r'^add_cus/(\d+)/$', views.Add_cus.as_view(), name='add_cus'),
+    url(r'^edit_cus/(\d+)/$', views.Add_cus.as_view(), name='edit_cus'),  # all
     url(r'^private/', views.IndexViews.as_view(), name='pirvate'),  # 私户
 
     # 跟进表
