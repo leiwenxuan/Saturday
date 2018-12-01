@@ -193,7 +193,7 @@ def Batch_processing(request):
 
     # 获取role_id
     role_id = request.GET.get('role_id')
-    print(role_id, '&'*20)
+    print(role_id, '&' * 20)
     role_id_obj = models.Role.objects.filter(pk=role_id).first()
     # if is post
     if request.method == 'POST':
@@ -206,8 +206,8 @@ def Batch_processing(request):
 
         if request.POST.get('type_post') == 'process_set':
             process_ids = request.POST.getlist('process_id')
-            role_id_obj.permissions.set(models.Userpurview.objects.filter(id__in=process_ids))
-
+            role_id_obj.permissions.set(
+                models.Userpurview.objects.filter(id__in=process_ids))
 
     seed_data = {
         'user_obj': user_obj,

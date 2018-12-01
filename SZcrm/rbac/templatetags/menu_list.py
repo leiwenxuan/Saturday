@@ -14,7 +14,7 @@ def meun_list(request):
     # 3. 获取session 里面的权限限定
     menu_dict = request.session.get(menu_key)
     # 4.　循环判断：如果当前的ｕｒｌ在权限里面加一个css样式，
-    del menu_dict['null']
+    # del menu_dict['null']
 
     menu_dict = sorted(menu_dict.values(), key=lambda x: x['weight'])
     for menu in menu_dict:
