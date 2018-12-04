@@ -60,7 +60,11 @@
 </nav>
         {% load menu_list %}
 <div>
-    {% bread_crumb request %}
+{{  request.user }}
+    {% if request.user.name %}
+     {% bread_crumb request %}
+    {% endif %}
+
 </div>
 
 <script src="{% static 'css/jquery.js' %}"></script>

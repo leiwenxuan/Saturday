@@ -7,6 +7,8 @@ from rbac.forms import RoleForm, MenuForm, UserpurviewForm
 #  formset_factory　数据库不存在，　在保存时必须手动创建
 #  modelform_factory 修改编辑
 from django.forms import modelformset_factory, formset_factory, modelform_factory
+from rbac.utils import signals
+
 from utils import mypage
 
 # Create your views here.
@@ -105,6 +107,7 @@ def edit_permission(request, edit_id=None):
         print(form_obj)
         if form_obj.is_valid():
             form_obj.save()
+            signals.pizza_done.send(sender='save', request=request, obj=request.user)
             return redirect(reverse('rbac:menu_list'))
         else:
             print('&' * 20)
@@ -209,6 +212,7 @@ def Batch_processing(request):
             role_id_obj.permissions.set(
                 models.Userpurview.objects.filter(id__in=process_ids))
 
+
     seed_data = {
         'user_obj': user_obj,
         'role_obj': role_obj,
@@ -217,3 +221,23 @@ def Batch_processing(request):
         'role_id_obj': role_id_obj
     }
     return render(request, 'processing_batch.html', seed_data)
+
+
+import json
+# 缓存test程序 2018-12-1
+def time_001(request):
+    # 获取菜单选项
+    # ret = models.Menu.objects.all().first()
+    # json_ret = json.dumps(ret)
+    # print(json_ret)
+    import time
+    now = time.asctime()
+    # 查询一个url所属权限
+    obj = models.Userpurview.objects.all().first()
+
+    return render(request, 'time_001.html', {"now": now})
+
+#
+# import r
+# def v_code(request):
+#     with open('1.jpg', 'wb') as f:

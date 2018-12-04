@@ -7,6 +7,7 @@ urlpatterns = [
 
     # 登陆相关
     url(r'^login/', auth_views.LoginViews.as_view(), name='login'),
+    url(r'^v_code/', auth_views.v_code, name='v_code'),
     url(r'^log/', auth_views.login, name='log'),
     url(r'^reg/', auth_views.RegViews.as_view(), name='reg'),
     url(r'^check_user/', auth_views.check_user, name='check_user'),

@@ -1,0 +1,83 @@
+1. 1 let 块级作用域 {}， 不可以重新定义 ， 可以重新赋值
+1. 2 var 重新覆盖 ， 全局
+1. 3 const 是一个常量，不可修改，只能引用
+
+2.1 模板字符串：
+    `` // tab键
+    ${变量}
+2.2 this 当前函数的最近调用者
+上下环境， 函数当前所在的环境
+
+
+2.3 数据的解构
+    let  obj = {
+        a:1,
+        b:2,
+    }
+    let = {a, b} = obj
+    调用： 解压对象
+        console.log(a) = 1
+        console.log(b) = 2
+
+
+    let hobby = ['name1', 'name2']
+    let [name, name] = hobby
+2.4  箭头函数
+    var func = x => x+1
+
+3.1 类的定义
+    class Animal {
+        constructor() {
+            # this 指的是类自己
+            this.type = 'animal'
+        }
+        # 类的实例方法
+        aa() {
+            console.log()
+        }
+    };
+
+    class Dog extends Animal {
+        # 本身没有this 
+        constructor() {
+            this.type = 'dog'
+        }
+        # 对象方法， 和父类名字一样，为重写方法
+        aa() {
+            console.log()
+        }
+    }
+     
+    let dog = new Dog();
+
+4. import export 
+
+4.1 export 抛出那些变量， import才可以导入
+
+
+MVVM --> Model数据  view模板   viewModel处理数据（为模板提高处理好的数据）
+
+
+5 vue
+5.1  v-text
+     v-html
+     v-for
+     v-bind
+     v-on
+     v-if v-else-if v-else
+
+     v-show  display
+     v-mode
+        input 数据的双向绑定
+        textarea
+     指令的修饰伏
+     .lazy
+     .number
+     .trim
+     自定义的指令
+     vue.directive('指令名称', function（el, binfing）)
+     el: 绑定指令的标签
+     binding 指令的所有信息组成的对象
+        value 指令的绑定数据的值
+        modifies 指令的修饰符组成的对象
+

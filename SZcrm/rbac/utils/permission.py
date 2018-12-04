@@ -72,4 +72,4 @@ def init(request, user_obj):
     request.session[permission_key] = permission_dict
     # 3. 存菜单信息到session数据中
     request.session[menu_key] = menu_dict
-    # print(menu_dict)
+    print(menu_dict)

@@ -11,9 +11,55 @@ from rbac.utils import permission
 
 from crm.forms import RegisteredForm
 from crm.models import UserProfile
-
+import random
+from PIL import ImageFont, ImageDraw, Image
 
 logger = logging.getLogger(__name__)
+
+
+def random_color():
+    return random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)
+
+
+def v_code(request):
+    img_obj = Image.new('RGB', (250, 35), random_color())
+
+    # 在该图片对象上生成一个画笔对象
+    draw_obj = ImageDraw.Draw(img_obj)
+
+    # font_obj = ImageFont.truetype('static/font/kumo.ttf', 28)
+
+    font_obj = ImageFont.truetype(r'/usr/share/fonts/deepin-font-install/Arial/arialbi.ttf', 36)
+    # font_obj = ImageFont.load_default().font
+    temp = []
+    for i in range(5):
+        l = chr(random.randint(97, 122))  # 小写字母
+        b = chr(random.randint(65, 90))  # 大写字母
+        n = str(random.randint(0, 9))
+
+        t = random.choice([l, b, n])
+        temp.append(t)
+
+        draw_obj.text((i * 40 + 35, 0), t, fill=random_color(), font=font_obj)
+
+    # 加干扰线
+    width = 250  # 图片宽度（防止越界）
+    height = 35
+    for i in range(5):
+        x1 = random.randint(0, width)
+        x2 = random.randint(0, width)
+        y1 = random.randint(0, height)
+        y2 = random.randint(0, height)
+        draw_obj.line((x1, y1, x2, y2), fill=random_color())
+
+    request.session['v_code'] = ''.join(temp).upper()
+
+    from io import BytesIO
+    f1 = BytesIO()
+    img_obj.save(f1, format="PNG")
+    img_data = f1.getvalue()
+
+    return HttpResponse(img_data, content_type='image/png')
 
 
 # 登陆
@@ -24,36 +70,42 @@ class LoginViews(View):
     def post(self, request):
         stu_name = request.POST.get('stu_name')
         stu_pwd = request.POST.get('stu_pwd')
-        # 判断checkbox 是否选中
-        is_check = (request.POST.get('check_un') == 'ok')
-        # 验证密码是否正确
-        user_obj = auth.authenticate(request, email=stu_name, password=stu_pwd)
-        if user_obj:
-            print('7' * 20)
-            # 把登陆用户加入
-            auth.login(request, user_obj)
-            permission.init(request, user_obj)
-            # # 从userinfo　获取ｕｒｌ
-            # # url_list = UserProfile.objects.all().values_list('role__permissions__url')
-            # # 跨表查询ｕｒｌ
-            # url_list = user_obj.roles.all().filter(permissions__isnull=False).values_list('permissions__url')
-            # permission_list = [permission[0] for permission in url_list]
-            # print(permission_list)
-            # print('#'*40)
-            # # 获取setting 设置的值
-            # key = getattr(settings,'PERMISSION_SESSION_KEY', 'permission_url')
-            # request.session[key] = permission_list
-            # 判断是否选中７天免登陆
-            if is_check:
-                request.session.set_expiry(7 * 24 * 60 * 60)
+        v_code = request.POST.get('v_code', '').upper()
+        v_code_new =request.session.get('v_code')
+        if v_code_new == v_code:
+            # 判断checkbox 是否选中
+            is_check = (request.POST.get('check_un') == 'ok')
+            # 验证密码是否正确
+            user_obj = auth.authenticate(request, email=stu_name, password=stu_pwd)
+            if user_obj:
+                print('7' * 20)
+                # 把登陆用户加入
+                auth.login(request, user_obj)
+                permission.init(request, user_obj)
+                # # 从userinfo　获取ｕｒｌ
+                # # url_list = UserProfile.objects.all().values_list('role__permissions__url')
+                # # 跨表查询ｕｒｌ
+                # url_list = user_obj.roles.all().filter(permissions__isnull=False).values_list('permissions__url')
+                # permission_list = [permission[0] for permission in url_list]
+                # print(permission_list)
+                # print('#'*40)
+                # # 获取setting 设置的值
+                # key = getattr(settings,'PERMISSION_SESSION_KEY', 'permission_url')
+                # request.session[key] = permission_list
+                # 判断是否选中７天免登陆
+                if is_check:
+                    request.session.set_expiry(7 * 24 * 60 * 60)
+                else:
+                    request.session.set_expiry(0)
+                next_url = reverse('crm:cus_list')
+                print(next_url)
+                return redirect(next_url)
             else:
-                request.session.set_expiry(0)
-            next_url = reverse('crm:cus_list')
-            print(next_url)
-            return redirect(next_url)
+                print('-' * 30)
+                return render(request, 'login2.html', {"error_msg": '用户名密码错误'})
         else:
-            print('-' * 30)
-            return render(request, 'login2.html', {"error_msg": '用户名密码错误'})
+
+            return render(request, 'login2.html', {"error_msg": '验证码失败'})
 
 
 # 注册

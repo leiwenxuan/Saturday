@@ -29,7 +29,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'suit',
+    # 'suit',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'django.middleware.cache.UpdateCacheMiddleware',  # 缓存配置
     # debug_toolbar 中间件
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -53,7 +54,13 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware',
     'rbac.mymiddleware.loginwara.LoginMiddle',
+    'django.middleware.cache.FetchFromCacheMiddleware',  # 缓存配置
 ]
+
+# 缓存配置
+# CACHE_MIDDLEWARE_ALIAS = ""
+CACHE_MIDDLEWARE_SECONDS = 3
+# CACHE_MIDDLEWARE_KEY_PREFIX = ""
 
 ROOT_URLCONF = 'SZcrm.urls'
 
@@ -238,11 +245,26 @@ LOGGING = {
 # 权限组件的相关配置
 WHITE_URLS = [
     '/crm/login/',
+    '/crm/v_code/',
     '/crm/logout/',
     '/crm/reg/',
     '/admin/.*',
 ]
 # 设置session 储存的KEY
 PERMISSION_URL_KEY = 'permissions_url'
-#　设置session 菜单
+# 设置session 菜单
 SECRET_MENU = 'menu_list'
+
+# 缓存配置
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+        'LOCATION': 'unique-snowflake',
+        'TIMEOUT': 300,  # 缓存超时时间（默认300，None表示永不过期，0表示立即过期）
+        'OPTIONS': {
+            'MAX_ENTRIES': 300,  # 最大缓存个数（默认300）
+            'CULL_FREQUENCY':
+            3,  # 缓存到达最大个数之后，剔除缓存个数的比例，即：1/CULL_FREQUENCY（默认3）
+        },
+    }
+}

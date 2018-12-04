@@ -23,15 +23,15 @@ class LoginMiddle(MiddlewareMixin):
         menu_dict = request.session[menu_key]
         # ２面包屑　数据结构
         request.bread_crumb = [{'title': '首页', 'url': '#'}]
-
+        print(request.bread_crumb, '&'*120)
         for item in request.session[session_key].values():
             if re.match(r'^{}$'.format(item['url']), new_url):
                 # 根据权限找到父菜单，保存到request.bread_crumb里面
                 menu_title = menu_dict[str(item['menu_id'])]['title']
                 request.bread_crumb.append({'title': menu_title})
-                break
-        # else:
-        #     return HttpResponse("没有此权限")
+                return None
+        else:
+            return HttpResponse("没有此权限")
 
 
 

@@ -29,7 +29,10 @@ def meun_list(request):
 # 生成面包屑导航
 @register.inclusion_tag(filename='rbac/bread_curmb.html')
 def bread_crumb(request):
+    request.bread_crumb = [{'title': '首页', 'url': '#'}]
+    print(request.bread_crumb)
     bread_crumb_list = request.bread_crumb
+
     return {'bread_crumb_list': bread_crumb_list}
 
 

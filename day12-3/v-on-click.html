@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<body>
+<div id="app">
+    <button   @click="my_click('打游戏')" v-on=@mouseenter:"my_enter">点击弹出look</button>
+
+</div>
+
+
+<script>
+    const  app = new Vue(
+        {
+            el: '#app',
+            data: {
+
+            },
+            methods: {
+                my_click: function (e) {
+                    alert('like'+e)
+                },
+                my_enter: function () {
+                    console.log('jhg')
+                }
+            }
+
+        }
+    )
+
+</script>
+
+
+</body>
+
+
+
+</html>

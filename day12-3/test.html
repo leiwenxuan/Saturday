@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<body>
+<div id="app">
+    <h1 v-text="name"></h1>
+    <h1 v-text="age"></h1>
+    <h3>他的爱好</h3>
+    <div>
+    <li v-for="(name, index) in hobby" :key="index">{{name}}
+    </li>
+    </div>
+</div>
+
+<ul>
+    <li v-for="(stu , index) in s1"> {{stu.name}}
+        {{stu.age}}
+    </li>
+
+</ul>
+
+<script>
+    // var a = new  Vue()
+    // let ele = document.getElementById("app")
+    // ele.innerText = 'lwx'
+
+    const app = new Vue({
+        el: '#app',  // el: 作用域， ‘#app’ 属性选择器
+        data: {
+            name: 'alex',
+            age: 25,
+            hobby: ['抽烟', '喝酒', '打豆豆'],
+            s1: [
+                {
+                    name: '小明',
+                    age: 28,
+                },
+                {
+                    name: '小李',
+                    age: 20,
+                }
+            ]
+        }
+
+    })
+
+
+</script>
+
+
+<!-- 开发环境版本，包含了有帮助的命令行警告 -->
+</body>
+</html>
